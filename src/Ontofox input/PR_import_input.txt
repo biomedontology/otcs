@@ -1,0 +1,20 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ogg/PR_imports.owl
+
+[Source ontology]
+PR
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PR_000000001 #protein
+http://purl.obolibrary.org/obo/PR_P23837 #sensor protein PhoQ (Escherichia coli K-12)
+http://purl.obolibrary.org/obo/PR_P23836 #transcriptional regulatory protein PhoP (Escherichia coli K-12)
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/PR_000000001 #protein
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+
+[Source term retrieval setting]
+includeAllIntermediates 
+
+[Source annotation URIs]
+includeAllAxioms

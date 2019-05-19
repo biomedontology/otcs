@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ogg/PR_imports.owl" uri="imports/PR_imports.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ogg/RO_import.owl" uri="imports/RO_imports.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ogg/NCBITaxon_import_base.owl" uri="NCBITaxon_import.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1558104693347" name="http://purl.obolibrary.org/obo/ogg-bac.owl" uri="ogg-bac.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558104693347" name="http://purl.obolibrary.org/obo/ogg-bac/OGG_import.owl" uri="imports/OGG_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558104693347" name="http://purl.obolibrary.org/obo/ogg-base.owl" uri="ogg-base.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558104693347" name="http://purl.obolibrary.org/obo/ogg/NCBITaxon_import.owl" uri="NCBITaxon_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558104693347" name="http://purl.obolibrary.org/obo/ogg/PR_imports.owl" uri="imports/PR_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558104693347" name="http://purl.obolibrary.org/obo/ogg/RO_import.owl" uri="imports/RO_imports.owl"/>
+    </group>
+</catalog>
