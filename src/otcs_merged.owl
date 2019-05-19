@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ogg-bac.owl/"
-     xml:base="http://purl.obolibrary.org/obo/ogg-bac.owl/"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/otcs.owl/"
+     xml:base="http://purl.obolibrary.org/obo/otcs.owl/"
      xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -11,17 +11,17 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogg-bac.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/otcs.owl">
         <dc:date xml:lang="en">5-15-2019</dc:date>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <dc:title xml:lang="en">OTCS: Ontology of Two Component Systems</dc:title>
         <dc:creator xml:lang="en">Hsin-hui Huang</dc:creator>
-        <dc:format xml:lang="en">OWL-DL</dc:format>
         <foaf:mbox rdf:resource="mailto:yongqunh@med.umich.edu"/>
+        <dc:format xml:lang="en">OWL-DL</dc:format>
         <owl:versionInfo xml:lang="en">Vision Release: 1.0.01</owl:versionInfo>
         <dc:description xml:lang="en">OTCS is a biological ontology of Two Component Systems.</dc:description>
-        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:subject xml:lang="en">A biological ontology in the area of Two Component Systems.</dc:subject>
+        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <dc:creator xml:lang="en">Meng Liu</dc:creator>
     </owl:Ontology>
     
@@ -559,16 +559,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000052">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000070"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1389,30 +1379,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
     </owl:ObjectProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000082"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">for all independent continuants b, c, and d:  if b continuant_part_of c at t &amp; c located_in d at t, then b located_in d at t. (axiom label in BFO2 Reference: [048-001])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/048-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000082"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
-        <owl:annotatedTarget xml:lang="en">for all independent continuants b, c, and d:  if b located_in c at t &amp; c continuant_part_of d at t, then b located_in d at t. (axiom label in BFO2 Reference: [049-001])</owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/049-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000082"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x y z t) (if (and (IndependentContinuant x) (IndependentContinuant y) (IndependentContinuant z) (continuantPartOfAt x y t) (locatedInAt y z t)) (locatedInAt x z t))) // axiom label in BFO2 CLIF: [048-001] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/048-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000082"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
-        <owl:annotatedTarget>(forall (x y z t) (if (and (IndependentContinuant x) (IndependentContinuant y) (IndependentContinuant z) (locatedInAt x y t) (continuantPartOfAt y z t)) (locatedInAt x z t))) // axiom label in BFO2 CLIF: [049-001] </owl:annotatedTarget>
-        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/049-001"/>
-    </owl:Axiom>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000082"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
         <owl:annotatedTarget>(forall (x y z t) (if (and (locatedInAt x y t) (locatedInAt y z t)) (locatedInAt x z t))) // axiom label in BFO2 CLIF: [046-001] </owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/046-001"/>
@@ -1434,6 +1400,30 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
         <owl:annotatedTarget xml:lang="en">Located_in is transitive. (axiom label in BFO2 Reference: [046-001])</owl:annotatedTarget>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/046-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000082"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">for all independent continuants b, c, and d:  if b continuant_part_of c at t &amp; c located_in d at t, then b located_in d at t. (axiom label in BFO2 Reference: [048-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/048-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000082"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
+        <owl:annotatedTarget xml:lang="en">for all independent continuants b, c, and d:  if b located_in c at t &amp; c continuant_part_of d at t, then b located_in d at t. (axiom label in BFO2 Reference: [049-001])</owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/049-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000082"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x y z t) (if (and (IndependentContinuant x) (IndependentContinuant y) (IndependentContinuant z) (continuantPartOfAt x y t) (locatedInAt y z t)) (locatedInAt x z t))) // axiom label in BFO2 CLIF: [048-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/048-001"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000082"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000602"/>
+        <owl:annotatedTarget>(forall (x y z t) (if (and (IndependentContinuant x) (IndependentContinuant y) (IndependentContinuant z) (locatedInAt x y t) (continuantPartOfAt y z t)) (locatedInAt x z t))) // axiom label in BFO2 CLIF: [049-001] </owl:annotatedTarget>
+        <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/049-001"/>
     </owl:Axiom>
     
 
@@ -2186,30 +2176,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-                            </owl:Class>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -2966,16 +2932,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-                    </owl:Class>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:domain>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
         <obo:BFO_0000179>bearer-of_at</obo:BFO_0000179>
         <obo:BFO_0000180>bearerOfAt</obo:BFO_0000180>
@@ -3364,30 +3320,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-                            </owl:Class>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -4335,9 +4267,9 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000008 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000008 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000008">
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OTCS_0000008">
         <rdfs:label xml:lang="en">has role</rdfs:label>
     </owl:ObjectProperty>
     
@@ -4373,12 +4305,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
     <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
@@ -4581,18 +4507,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000169"/>
                 <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
             </owl:Restriction>
@@ -4600,40 +4514,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:complementOf>
@@ -4804,25 +4684,7 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4840,25 +4702,7 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000187"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
-                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000083"/>
-                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000123"/>
                 <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4992,18 +4836,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
             </owl:Restriction>
@@ -5011,18 +4843,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000155"/>
-                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000155"/>
-                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000156"/>
                 <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5225,12 +5045,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000151"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000153"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
             </owl:Restriction>
@@ -5243,18 +5057,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
             </owl:Restriction>
@@ -5262,18 +5064,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000126"/>
-                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000126"/>
-                <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000130"/>
                 <owl:hasSelf rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasSelf>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5446,25 +5236,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
             </owl:Restriction>
@@ -5536,26 +5307,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
@@ -5653,26 +5404,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
@@ -5887,26 +5618,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000017"/>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
                 <owl:allValuesFrom>
                     <owl:Class>
@@ -6010,56 +5721,7 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000052"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
-                            <owl:Class>
-                                <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
-                            </owl:Class>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:complementOf>
@@ -6219,26 +5881,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
@@ -6633,47 +6275,7 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000058"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000020"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf>
-                            <owl:Class>
-                                <owl:unionOf rdf:parseType="Collection">
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
-                                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000020"/>
-                                </owl:unionOf>
-                            </owl:Class>
-                        </owl:complementOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:complementOf>
@@ -6828,18 +6430,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000108"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000148"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000117"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000035"/>
             </owl:Restriction>
@@ -6856,35 +6446,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
                                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
                             </owl:Restriction>
                         </owl:intersectionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000130"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000011"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000139"/>
-                                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
-                            </owl:Restriction>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000132"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000035"/>
-                        </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
             </owl:Restriction>
@@ -7048,25 +6609,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000176"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000141"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
                 <owl:allValuesFrom>
                     <owl:Class>
@@ -7082,19 +6624,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000186"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000187"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000141"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7390,22 +6919,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000178"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
@@ -7417,22 +6930,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000187"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000187"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000187"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-                    </owl:Class>
-                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -7893,12 +7390,6 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000148">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000118"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000118"/>
@@ -8993,37 +8484,37 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000001 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000001 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000001">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000001">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_2000000002"/>
         <rdfs:label xml:lang="en">bacterial protein-coding gene</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000002 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000002 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000002">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000002">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:label xml:lang="en">bacterial sensor role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000003 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000003 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000003">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000003">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:label xml:lang="en">bacterial responsor role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000004 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000004 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000015"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000015"/>
         <obo:IAO_0000115>A bacterial stimulus-response coupling system that allows a bacterium to sense and respond to changes in many different environmental conditions</obo:IAO_0000115>
         <obo:IAO_0000117>HH, ML, YH</obo:IAO_0000117>
         <obo:IAO_0000118>TCS</obo:IAO_0000118>
@@ -9034,14 +8525,14 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000005 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000005 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000005">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000005">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000011"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">E. coli phoP</rdfs:label>
@@ -9049,14 +8540,14 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000006 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000006 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000006">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000001"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000001"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000010"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000010"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">E. coli phoQ</rdfs:label>
@@ -9064,13 +8555,13 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000007 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000007 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000007">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000007">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000002"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000002"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000036195"/>
@@ -9079,13 +8570,13 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000009 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000009 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000009">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000009">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000003"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000003"/>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000036195"/>
@@ -9094,58 +8585,58 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000010 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000010 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000010">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000010">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:label xml:lang="en">bacterial sensor gene role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000011 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000011 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000011">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
         <rdfs:label xml:lang="en">bacterial responsor gene role</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000012 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000012 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000012">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000012">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000010"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000010"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000001"/>
         <rdfs:label xml:lang="en">bacterial sensor gene</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000013 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000013 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000013">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000013">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000011"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000011"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000001"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000001"/>
         <rdfs:label xml:lang="en">bacterial responsor gene</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000014 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000014 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000016"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000016"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -9163,19 +8654,19 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000015 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000015 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000015">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000015">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002577"/>
         <rdfs:label xml:lang="en">Two-component regulatory system</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGG_Bac_0000016 -->
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000016 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGG_Bac_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000004"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OTCS_0000016">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000004"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
@@ -9317,8 +8808,8 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000029062"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000003"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -9365,8 +8856,8 @@ where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PR_000029062"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGG_Bac_0000002"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000008"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OTCS_0000002"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>

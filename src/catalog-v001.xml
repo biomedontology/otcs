@@ -4,12 +4,11 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ogg/RO_import.owl" uri="imports/RO_imports.owl"/>
     <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ogg/NCBITaxon_import_base.owl" uri="NCBITaxon_import.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1558294348971" name="http://purl.obolibrary.org/obo/ogg-bac.owl" uri="ogg-bac.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1558294348971" name="http://purl.obolibrary.org/obo/ogg-bac.owl/" uri="otcs_merged.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1558294348971" name="http://purl.obolibrary.org/obo/ogg-bac/OGG_import.owl" uri="imports/OGG_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1558294348971" name="http://purl.obolibrary.org/obo/ogg-base.owl" uri="ogg-base.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1558294348971" name="http://purl.obolibrary.org/obo/ogg/NCBITaxon_import.owl" uri="NCBITaxon_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1558294348971" name="http://purl.obolibrary.org/obo/ogg/PR_imports.owl" uri="imports/PR_imports.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1558294348971" name="http://purl.obolibrary.org/obo/ogg/RO_import.owl" uri="imports/RO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558296253568" name="http://purl.obolibrary.org/obo/ogg-bac/OGG_import.owl" uri="imports/OGG_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558296253568" name="http://purl.obolibrary.org/obo/ogg-base.owl" uri="imports/ogg-base.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558296253568" name="http://purl.obolibrary.org/obo/ogg/NCBITaxon_import.owl" uri="imports/NCBITaxon_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558296253568" name="http://purl.obolibrary.org/obo/ogg/PR_imports.owl" uri="imports/PR_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558296253568" name="http://purl.obolibrary.org/obo/ogg/RO_import.owl" uri="imports/RO_imports.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1558296253568" name="http://purl.obolibrary.org/obo/otcs.owl/" uri="otcs_merged.owl"/>
     </group>
 </catalog>
