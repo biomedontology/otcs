@@ -1,0 +1,2622 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;OTCS/ion_transport/GO_import.owl.#"
+     xml:base="&obo;OTCS/ion_transport/GO_import.owl."
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="&obo;OTCS/ion_transport/GO_import.owl."/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasAlternativeId">
+        <rdfs:label rdf:datatype="&xsd;string">has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasBroadSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_broad_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref">
+        <rdfs:label rdf:datatype="&xsd;string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasNarrowSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;inSubset">
+        <rdfs:label rdf:datatype="&xsd;string">in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0000041 -->
+
+    <owl:Class rdf:about="&obo;GO_0000041">
+        <rdfs:label rdf:datatype="&xsd;string">transition metal ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0030001"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0000041</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of transition metal ions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore. A transition metal is an element whose atom has an incomplete d-subshell of extranuclear electrons, or which gives rise to a cation or cations with an incomplete d-subshell. Transition metals often have more than one valency state. Biologically relevant transition metals include vanadium, manganese, iron, copper, cobalt, nickel, molybdenum and silver.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">transition metal transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0002115 -->
+
+    <owl:Class rdf:about="&obo;GO_0002115">
+        <rdfs:label rdf:datatype="&xsd;string">store-operated calcium entry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006816"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A calcium ion entry mechanism in the plasma membrane activated by the depletion of calcium ion from the internal calcium ion store in the endoplasmic reticulum.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0002115</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">SOCE</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">SOCE is initiated by response to stiumlation of membrane receptors leading to the hydrolysis ofphosphatidylinositol bisphosphate (PIP2), inositol 1,4,5-trisphosphate (IP3) generation, and IP3-mediated calcium ion release from the endoplasmic reticulum.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">calcium ion import</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">capacitative calcium entry</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">store-operated calcium import</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003096 -->
+
+    <owl:Class rdf:about="&obo;GO_0003096">
+        <rdfs:label rdf:datatype="&xsd;string">renal sodium ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006814"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003096</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of sodium ions (Na+) by the kidney.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006811 -->
+
+    <owl:Class rdf:about="&obo;GO_0006811">
+        <rdfs:label rdf:datatype="&xsd;string">ion transport</rdfs:label>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006811</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MIPS_funcat:20.01.01</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of charged atoms or small charged molecules into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006812 -->
+
+    <owl:Class rdf:about="&obo;GO_0006812">
+        <rdfs:label rdf:datatype="&xsd;string">cation transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006811"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006812</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006819</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0015674</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MIPS_funcat:20.01.01.01</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of cations, atoms or small molecules with a net positive charge, into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">di-, tri-valent inorganic cation transport</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006813 -->
+
+    <owl:Class rdf:about="&obo;GO_0006813">
+        <rdfs:label rdf:datatype="&xsd;string">potassium ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015672"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0030001"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-09-03T02:39:22Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006813</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0015458</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0071804</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">K+ conductance</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of potassium ions (K+) into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cellular potassium ion transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">low voltage-dependent potassium channel auxiliary protein activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">low voltage-gated potassium channel auxiliary protein activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">potassium conductance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">potassium ion conductance</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">potassium transport</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">sodium/potassium transport</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006814 -->
+
+    <owl:Class rdf:about="&obo;GO_0006814">
+        <rdfs:label rdf:datatype="&xsd;string">sodium ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015672"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0030001"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006814</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006834</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0016974</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of sodium ions (Na+) into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">mitochondrial sodium/calcium ion exchange</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">sodium channel auxiliary protein activity</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sodium transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">sodium/potassium transport</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">sodium:calcium exchange</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">sodium:solute transport</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006816 -->
+
+    <owl:Class rdf:about="&obo;GO_0006816">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070838"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006816</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of calcium (Ca) ions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">calcium transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">mitochondrial sodium/calcium ion exchange</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">sodium:calcium exchange</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006817 -->
+
+    <owl:Class rdf:about="&obo;GO_0006817">
+        <rdfs:label rdf:datatype="&xsd;string">phosphate ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015698"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006817</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MIPS_funcat:20.01.01.07.07</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of phosphate into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">phosphate transport</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006820 -->
+
+    <owl:Class rdf:about="&obo;GO_0006820">
+        <rdfs:label rdf:datatype="&xsd;string">anion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006811"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006820</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006822</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MIPS_funcat:20.01.01.07</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of anions, atoms or small molecules with a net negative charge, into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006821 -->
+
+    <owl:Class rdf:about="&obo;GO_0006821">
+        <rdfs:label rdf:datatype="&xsd;string">chloride transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015698"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006821</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MIPS_funcat:20.01.01.07.09</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of chloride into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006824 -->
+
+    <owl:Class rdf:about="&obo;GO_0006824">
+        <rdfs:label rdf:datatype="&xsd;string">cobalt ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0000041"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0072511"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006824</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of cobalt (Co) ions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cobalt transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006825 -->
+
+    <owl:Class rdf:about="&obo;GO_0006825">
+        <rdfs:label rdf:datatype="&xsd;string">copper ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0000041"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006825</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of copper (Cu) ions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006826 -->
+
+    <owl:Class rdf:about="&obo;GO_0006826">
+        <rdfs:label rdf:datatype="&xsd;string">iron ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0000041"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-04-18T03:33:45Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006826</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0015681</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0015682</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0015684</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0033216</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0097286</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of iron (Fe) ions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferric ion import</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferric ion transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferric iron import</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferric iron transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferric iron uptake</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferrous ion transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferrous iron transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">iron ion import</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">iron transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">paola</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006828 -->
+
+    <owl:Class rdf:about="&obo;GO_0006828">
+        <rdfs:label rdf:datatype="&xsd;string">manganese ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0000041"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006828</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of manganese (Mn) ions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006829 -->
+
+    <owl:Class rdf:about="&obo;GO_0006829">
+        <rdfs:label rdf:datatype="&xsd;string">zinc ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0000041"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070838"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006829</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of zinc (Zn II) ions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc II ion transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0006851 -->
+
+    <owl:Class rdf:about="&obo;GO_0006851">
+        <rdfs:label rdf:datatype="&xsd;string">mitochondrial calcium ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070588"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0006851</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which a calcium ion (Ca2+) is transported across a mitochondrial membrane, into or out of the mitochondrion.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mitochondrial calcium transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008272 -->
+
+    <owl:Class rdf:about="&obo;GO_0008272">
+        <rdfs:label rdf:datatype="&xsd;string">sulfate transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015698"/>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006870</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0008272</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MIPS_funcat:20.01.01.07.05</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of sulfate into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sulphate transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010351 -->
+
+    <owl:Class rdf:about="&obo;GO_0010351">
+        <rdfs:label rdf:datatype="&xsd;string">lithium ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015672"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0030001"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0010351</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of lithium ion into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">lithium transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0010352 -->
+
+    <owl:Class rdf:about="&obo;GO_0010352">
+        <rdfs:label rdf:datatype="&xsd;string">lithium ion export across the plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0010351"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0010352</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of lithium ion out of a cell or organelle.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">lithium export</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">lithium ion efflux</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">lithium ion export</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015672 -->
+
+    <owl:Class rdf:about="&obo;GO_0015672">
+        <rdfs:label rdf:datatype="&xsd;string">monovalent inorganic cation transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006812"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015672</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of inorganic cations with a valency of one into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore. Inorganic cations are atoms or small molecules with a positive charge which do not contain carbon in covalent linkage.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015673 -->
+
+    <owl:Class rdf:about="&obo;GO_0015673">
+        <rdfs:label rdf:datatype="&xsd;string">silver ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0000041"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015673</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of silver (Ag) ions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">silver transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015675 -->
+
+    <owl:Class rdf:about="&obo;GO_0015675">
+        <rdfs:label rdf:datatype="&xsd;string">nickel cation transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0000041"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015675</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of nickel (Ni) cations into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015676 -->
+
+    <owl:Class rdf:about="&obo;GO_0015676">
+        <rdfs:label rdf:datatype="&xsd;string">vanadium ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0000041"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015676</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of vanadium (V) ions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015677 -->
+
+    <owl:Class rdf:about="&obo;GO_0015677">
+        <rdfs:label rdf:datatype="&xsd;string">copper ion import</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006825"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015677</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of copper ions into a cell or organelle.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">copper ion uptake</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015679 -->
+
+    <owl:Class rdf:about="&obo;GO_0015679">
+        <rdfs:label rdf:datatype="&xsd;string">plasma membrane copper ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0035434"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015679</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of copper ions across the plasma membrane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">plasma membrane copper transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015685 -->
+
+    <owl:Class rdf:about="&obo;GO_0015685">
+        <rdfs:label rdf:datatype="&xsd;string">ferric-enterobactin import into cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0033214"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0042930"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which ferric-enterobactin, the iron-bound form of the siderophore enterobactin, is transported into the cell by specific cell surface receptors.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015685</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">ferric-enterobactin transport</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015686 -->
+
+    <owl:Class rdf:about="&obo;GO_0015686">
+        <rdfs:label rdf:datatype="&xsd;string">ferric triacetylfusarinine C import into cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0033214"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015686</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of ferric triacetylfusarinine C into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">ferric triacetylfusarinine C transport</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015691 -->
+
+    <owl:Class rdf:about="&obo;GO_0015691">
+        <rdfs:label rdf:datatype="&xsd;string">cadmium ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0000041"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070838"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015691</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of cadmium (Cd) ions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cadmium transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015692 -->
+
+    <owl:Class rdf:about="&obo;GO_0015692">
+        <rdfs:label rdf:datatype="&xsd;string">lead ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0030001"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015692</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of lead (Pb) ions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015693 -->
+
+    <owl:Class rdf:about="&obo;GO_0015693">
+        <rdfs:label rdf:datatype="&xsd;string">magnesium ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070838"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015693</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of magnesium (Mg) ions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">magnesium transport</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015694 -->
+
+    <owl:Class rdf:about="&obo;GO_0015694">
+        <rdfs:label rdf:datatype="&xsd;string">mercury ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0000041"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0072511"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015694</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of mercury (Hg) ions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">mercuric ion transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mercury transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015695 -->
+
+    <owl:Class rdf:about="&obo;GO_0015695">
+        <rdfs:label rdf:datatype="&xsd;string">organic cation transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006812"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015695</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of organic cations into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore. Organic cations are atoms or small molecules with a positive charge which contain carbon in covalent linkage.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015698 -->
+
+    <owl:Class rdf:about="&obo;GO_0015698">
+        <rdfs:label rdf:datatype="&xsd;string">inorganic anion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006820"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015698</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of inorganic anions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore. Inorganic anions are atoms or small molecules with a negative charge which do not contain carbon in covalent linkage.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015702 -->
+
+    <owl:Class rdf:about="&obo;GO_0015702">
+        <rdfs:label rdf:datatype="&xsd;string">chlorate transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015698"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015702</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of chlorate into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015706 -->
+
+    <owl:Class rdf:about="&obo;GO_0015706">
+        <rdfs:label rdf:datatype="&xsd;string">nitrate transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015698"/>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006872</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015706</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0080055</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MIPS_funcat:20.01.01.07.01</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of nitrate into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">low affinity nitrate transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">low-affinity nitrate transport</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015707 -->
+
+    <owl:Class rdf:about="&obo;GO_0015707">
+        <rdfs:label rdf:datatype="&xsd;string">nitrite transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015698"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015707</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MIPS_funcat:20.01.01.07.03</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of nitrite into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015711 -->
+
+    <owl:Class rdf:about="&obo;GO_0015711">
+        <rdfs:label rdf:datatype="&xsd;string">organic anion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006820"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015711</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of organic anions into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore. Organic anions are atoms or small molecules with a negative charge which contain carbon in covalent linkage.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015760 -->
+
+    <owl:Class rdf:about="&obo;GO_0015760">
+        <rdfs:label rdf:datatype="&xsd;string">glucose-6-phosphate transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015711"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015760</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of glucose-6-phosphate into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore. Glucose-6-phosphate is a monophosphorylated derivative of glucose with the phosphate group attached to C-6.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015866 -->
+
+    <owl:Class rdf:about="&obo;GO_0015866">
+        <rdfs:label rdf:datatype="&xsd;string">ADP transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015711"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015866</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of ADP, adenosine diphosphate, into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015867 -->
+
+    <owl:Class rdf:about="&obo;GO_0015867">
+        <rdfs:label rdf:datatype="&xsd;string">ATP transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015711"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015867</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of ATP, adenosine triphosphate, into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015886 -->
+
+    <owl:Class rdf:about="&obo;GO_0015886">
+        <rdfs:label rdf:datatype="&xsd;string">heme transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_1901678"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015886</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of heme, any compound of iron complexed in a porphyrin (tetrapyrrole) ring, into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">haem transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015891 -->
+
+    <owl:Class rdf:about="&obo;GO_0015891">
+        <rdfs:label rdf:datatype="&xsd;string">siderophore transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_1901678"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015891</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0015892</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of siderophores, low molecular weight Fe(III)-chelating substances, into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">iron-siderochrome transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">iron-siderophore transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">siderochrome transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">siderophore-iron transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015985 -->
+
+    <owl:Class rdf:about="&obo;GO_0015985">
+        <rdfs:label rdf:datatype="&xsd;string">energy coupled proton transport, down electrochemical gradient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_1902600"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015985</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The transport of protons across a membrane to generate an electrochemical gradient (proton-motive force) that provides energy for the synthesis of ATP or GTP.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015986 -->
+
+    <owl:Class rdf:about="&obo;GO_0015986">
+        <rdfs:label rdf:datatype="&xsd;string">ATP synthesis coupled proton transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015985"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015986</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The transport of protons across a membrane to generate an electrochemical gradient (proton-motive force) that powers ATP synthesis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">chemiosmosis</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015987 -->
+
+    <owl:Class rdf:about="&obo;GO_0015987">
+        <rdfs:label rdf:datatype="&xsd;string">GTP synthesis coupled proton transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015985"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015987</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The transport of protons across a membrane to generate an electrochemical gradient (proton-motive force) that powers GTP synthesis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015988 -->
+
+    <owl:Class rdf:about="&obo;GO_0015988">
+        <rdfs:label rdf:datatype="&xsd;string">energy coupled proton transmembrane transport, against electrochemical gradient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_1902600"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015988</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The transport of protons across a membrane and against an electrochemical gradient, using energy from a source such as ATP hydrolysis, light, or electron transport.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015989 -->
+
+    <owl:Class rdf:about="&obo;GO_0015989">
+        <rdfs:label rdf:datatype="&xsd;string">light-driven proton transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015988"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015989</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The transport of protons against an electrochemical gradient, using energy from light.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0015990 -->
+
+    <owl:Class rdf:about="&obo;GO_0015990">
+        <rdfs:label rdf:datatype="&xsd;string">electron transport coupled proton transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015988"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0015990</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The transport of protons against an electrochemical gradient, using energy from electron transport.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0020028 -->
+
+    <owl:Class rdf:about="&obo;GO_0020028">
+        <rdfs:label rdf:datatype="&xsd;string">endocytic hemoglobin import</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015886"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0033212"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0020028</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement into a tissue or a cell or organelle of externally available hemoglobin by receptor-mediated endocytosis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">haemoglobin uptake</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">hemoglobin uptake</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0030001 -->
+
+    <owl:Class rdf:about="&obo;GO_0030001">
+        <rdfs:label rdf:datatype="&xsd;string">metal ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006812"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0030001</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of metal ions, any metal ion with an electric charge, into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">heavy metal ion transport</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0030321 -->
+
+    <owl:Class rdf:about="&obo;GO_0030321">
+        <rdfs:label rdf:datatype="&xsd;string">transepithelial chloride transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006821"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0030321</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of chloride ions from one side of an epithelium to the other.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032472 -->
+
+    <owl:Class rdf:about="&obo;GO_0032472">
+        <rdfs:label rdf:datatype="&xsd;string">Golgi calcium ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006816"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0032472</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Golgi calcium transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of calcium ions (Ca2+) into, out of or within the Golgi apparatus.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0033212 -->
+
+    <owl:Class rdf:about="&obo;GO_0033212">
+        <rdfs:label rdf:datatype="&xsd;string">iron import into cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006826"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-05-01T04:19:14Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0033212</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0070627</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of iron ions from outside of a cell into the cytoplasmic compartment. This may occur via transport across the plasma membrane or via endocytosis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferrous ion import</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferrous iron import</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferrous iron uptake</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">iron assimilation</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0033214 -->
+
+    <owl:Class rdf:about="&obo;GO_0033214">
+        <rdfs:label rdf:datatype="&xsd;string">siderophore-dependent iron import into cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0033212"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_1901678"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which iron (Fe3+) is solubilized by ferric iron-specific chelators, known as siderophores, excreted by a cell; the iron-siderophore complex is then transported into the cell by specific cell surface receptors.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0015688</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0033213</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0033214</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">iron assimilation by capture and transport</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">iron assimilation by chelation and transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">iron chelate transport</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0033215 -->
+
+    <owl:Class rdf:about="&obo;GO_0033215">
+        <rdfs:label rdf:datatype="&xsd;string">reductive iron assimilation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0033212"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which iron is solubilized by reduction from Fe3+ to Fe2+ via a cell surface reductase and subsequent transport of the iron across the membrane by iron uptake proteins.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0033215</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">iron assimilation by reduction and transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0033571 -->
+
+    <owl:Class rdf:about="&obo;GO_0033571">
+        <rdfs:label rdf:datatype="&xsd;string">lactoferrin transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006826"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0033571</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of lactoferrin into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0033572 -->
+
+    <owl:Class rdf:about="&obo;GO_0033572">
+        <rdfs:label rdf:datatype="&xsd;string">transferrin transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006826"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0033572</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of transferrin into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">melanotransferrin transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0034220 -->
+
+    <owl:Class rdf:about="&obo;GO_0034220">
+        <rdfs:label rdf:datatype="&xsd;string">ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006811"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which an ion is transported across a membrane.</obo:IAO_0000115>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ATP hydrolysis coupled ion transmembrane transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0034220</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0099131</oboInOwl:hasAlternativeId>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">ion membrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">transmembrane ion transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0034635 -->
+
+    <owl:Class rdf:about="&obo;GO_0034635">
+        <rdfs:label rdf:datatype="&xsd;string">glutathione transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015711"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0034635</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of glutathione, the tripeptide glutamylcysteinylglycine, into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0034755 -->
+
+    <owl:Class rdf:about="&obo;GO_0034755">
+        <rdfs:label rdf:datatype="&xsd;string">iron ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006826"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2015-02-06T11:29:22Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which an iron ion is transported from one side of a membrane to the other by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0000040</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006827</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0034755</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0061839</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:1903874</oboInOwl:hasAlternativeId>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferrous ion transmembrane transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferrous iron transmembrane transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high affinity ferrous ion transmembrane transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high affinity iron ion transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high-affinity ferrous ion transmembrane transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high-affinity iron ion transmembrane transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high-affinity iron ion transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">iron ion membrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">iron(2+) transmembrane transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">low affinity iron ion transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">low-affinity iron ion transmembrane transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">low-affinity iron ion transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">transmembrane iron transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">vw</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035351 -->
+
+    <owl:Class rdf:about="&obo;GO_0035351">
+        <rdfs:label rdf:datatype="&xsd;string">heme transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015886"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0034755"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-03-04T03:45:46Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0035351</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which heme, any compound of iron complexed in a porphyrin (tetrapyrrole) ring, is transported from one side of a membrane to the other by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">heme membrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">rfoulger</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035434 -->
+
+    <owl:Class rdf:about="&obo;GO_0035434">
+        <rdfs:label rdf:datatype="&xsd;string">copper ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006825"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-04-08T11:03:23Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0035434</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:1901473</oboInOwl:hasAlternativeId>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of copper cation across a membrane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">copper cation transmembrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">copper ion membrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">rfoulger</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035444 -->
+
+    <owl:Class rdf:about="&obo;GO_0035444">
+        <rdfs:label rdf:datatype="&xsd;string">nickel cation transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015675"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-04-13T09:22:51Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0035444</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of nickel (Ni) cations across a membrane by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">nickel cation membrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">rfoulger</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035725 -->
+
+    <owl:Class rdf:about="&obo;GO_0035725">
+        <rdfs:label rdf:datatype="&xsd;string">sodium ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006814"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2011-03-10T02:52:36Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which a sodium ion is transported from one side of a membrane to the other by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0035725</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">rfoulger</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sodium ion membrane transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0035817 -->
+
+    <owl:Class rdf:about="&obo;GO_0035817">
+        <rdfs:label rdf:datatype="&xsd;string">renal sodium ion absorption involved in negative regulation of renal sodium excretion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070294"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2011-04-20T01:40:11Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any process where sodium ions are taken up from the collecting ducts and proximal and distal loops of the nephron, which contributes to decreasing the amount of sodium that is excreted in urine per unit time.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0035817</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">rfoulger</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0036249 -->
+
+    <owl:Class rdf:about="&obo;GO_0036249">
+        <rdfs:label rdf:datatype="&xsd;string">cadmium ion import into vacuole</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0000041"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-05-31T11:13:44Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0036249</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of cadmium ions into the vacuole.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">rfoulger</oboInOwl:created_by>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">vacuolar cadmium import</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0036376 -->
+
+    <owl:Class rdf:about="&obo;GO_0036376">
+        <rdfs:label rdf:datatype="&xsd;string">sodium ion export across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0035725"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-12-16T11:13:55Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0036376</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0071436</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0098667</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of sodium ions from inside of a cell, across the plasma membrane and into the extracellular region.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">sodium export</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">sodium ion export</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sodium ion export from cell</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0036444 -->
+
+    <owl:Class rdf:about="&obo;GO_0036444">
+        <rdfs:label rdf:datatype="&xsd;string">calcium import into the mitochondrion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006851"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0060401"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070509"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-10-28T09:32:39Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which a calcium ion (Ca2+) is transported from the cytosol, into the mitochondrial matrix.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0036444</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">calcium ion import into mitochondrion</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">calcium ion transmembrane import into mitochondrion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">mitochondrial calcium ion import</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mitochondrial calcium uptake</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">rfoulger</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0042776 -->
+
+    <owl:Class rdf:about="&obo;GO_0042776">
+        <rdfs:label rdf:datatype="&xsd;string">mitochondrial ATP synthesis coupled proton transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015986"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0042776</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The transport of protons across a mitochondrial membrane to generate an electrochemical gradient (proton-motive force) that powers ATP synthesis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">mitochondrial proton transport</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0042777 -->
+
+    <owl:Class rdf:about="&obo;GO_0042777">
+        <rdfs:label rdf:datatype="&xsd;string">plasma membrane ATP synthesis coupled proton transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015986"/>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">ATP synthesis coupled proton transport</oboInOwl:hasBroadSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0042777</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The transport of protons across the plasma membrane to generate an electrochemical gradient (proton-motive force) that powers ATP synthesis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0042930 -->
+
+    <owl:Class rdf:about="&obo;GO_0042930">
+        <rdfs:label rdf:datatype="&xsd;string">enterobactin transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015711"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015891"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0042930</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of the siderochrome enterobactin, a cyclic trimer of 2, 3 dihydroxybenzoylserine into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">enterochelin transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044341 -->
+
+    <owl:Class rdf:about="&obo;GO_0044341">
+        <rdfs:label rdf:datatype="&xsd;string">sodium-dependent phosphate transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006817"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-08-20T04:16:15Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0044341</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of phosphate into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore, by a mechanism dependent upon sodium ions.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">janelomax</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044718 -->
+
+    <owl:Class rdf:about="&obo;GO_0044718">
+        <rdfs:label rdf:datatype="&xsd;string">siderophore transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015891"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0034755"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-10-18T13:43:56Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0044718</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of siderophores, low molecular weight Fe(III)-chelating substances, from one side of a membrane to the other, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">janelomax</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">siderophore membrane transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0045016 -->
+
+    <owl:Class rdf:about="&obo;GO_0045016">
+        <rdfs:label rdf:datatype="&xsd;string">mitochondrial magnesium ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_1903830"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2015-01-21T17:44:38Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0045016</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:1990614</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which a magnesium ion (Mg2+) is transported across a mitochondrial membrane, into or out of the mitochondrion.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">mcc</oboInOwl:created_by>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">mitochondrial magnesium ion transport</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048250 -->
+
+    <owl:Class rdf:about="&obo;GO_0048250">
+        <rdfs:label rdf:datatype="&xsd;string">iron import into the mitochondrion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0034755"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2016-02-10T11:24:22Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0048250</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:1990925</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which iron is transported from the cytosol, into the mitochondrial matrix.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">al</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mitochondrial iron cation transmembrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">mitochondrial iron ion transmembrane transport</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">mitochondrial iron ion transport</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mitochondrial iron transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060003 -->
+
+    <owl:Class rdf:about="&obo;GO_0060003">
+        <rdfs:label rdf:datatype="&xsd;string">copper ion export</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0035434"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0060003</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of copper ions out of a cell or organelle.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">copper export</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060401 -->
+
+    <owl:Class rdf:about="&obo;GO_0060401">
+        <rdfs:label rdf:datatype="&xsd;string">cytosolic calcium ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006816"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0060401</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of calcium ions (Ca2+) into, out of or within the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060402 -->
+
+    <owl:Class rdf:about="&obo;GO_0060402">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion transport into cytosol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0060401"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0060402</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of calcium ions (Ca2+) into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0061577 -->
+
+    <owl:Class rdf:about="&obo;GO_0061577">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion transmembrane transport via high voltage-gated calcium channel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070588"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-11-15T16:20:27Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which a calcium ion is transported from one side of a membrane to the other by means of a high voltage-gated calcium channel.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0061577</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">generation of L-type calcium current</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0061856 -->
+
+    <owl:Class rdf:about="&obo;GO_0061856">
+        <rdfs:label rdf:datatype="&xsd;string">Golgi calcium ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032472"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070588"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2017-03-14T16:08:23Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which a calcium ion is transported from one side of a Golgi membrane to the other by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0061856</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0062111 -->
+
+    <owl:Class rdf:about="&obo;GO_0062111">
+        <rdfs:label rdf:datatype="&xsd;string">zinc ion import into organelle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0071577"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2019-02-05T15:27:38Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0062111</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed import of zinc(2+) from the cytosol, across an organelle membrane, into the organelle.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0070294 -->
+
+    <owl:Class rdf:about="&obo;GO_0070294">
+        <rdfs:label rdf:datatype="&xsd;string">renal sodium ion absorption</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003096"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A renal system process in which sodium ions are taken up from the collecting ducts and proximal and distal loops of the nephron. In non-mammalian species, absorption may occur in related structures.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0070294</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">nephron sodium ion absorption</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">renal sodium ion reabsorption</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0070296 -->
+
+    <owl:Class rdf:about="&obo;GO_0070296">
+        <rdfs:label rdf:datatype="&xsd;string">sarcoplasmic reticulum calcium ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006816"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0070296</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of calcium ions (Ca2+) into, out of or within the sarcoplasmic reticulum.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0070509 -->
+
+    <owl:Class rdf:about="&obo;GO_0070509">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion import</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006816"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0070509</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of calcium ions into a cell or organelle.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">calcium ion uptake</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">transmembrane calcium influx</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0070574 -->
+
+    <owl:Class rdf:about="&obo;GO_0070574">
+        <rdfs:label rdf:datatype="&xsd;string">cadmium ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015691"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-04-20T03:31:47Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which a cadmium ion is transported from one side of a membrane to the other by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0070574</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cadmium ion membrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">transmembrane cadmium transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0070588 -->
+
+    <owl:Class rdf:about="&obo;GO_0070588">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006816"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-04-28T10:44:09Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which a calcium ion is transported from one side of a membrane to the other by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0070588</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">calcium ion membrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">transmembrane calcium transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0070730 -->
+
+    <owl:Class rdf:about="&obo;GO_0070730">
+        <rdfs:label rdf:datatype="&xsd;string">cAMP transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015711"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-06-17T03:53:45Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0070730</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of cyclic AMP (cAMP), into, out of or within a cell.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cyclic AMP transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0070731 -->
+
+    <owl:Class rdf:about="&obo;GO_0070731">
+        <rdfs:label rdf:datatype="&xsd;string">cGMP transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015711"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-06-17T04:40:27Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0070731</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of cyclic GMP (cGMP), into, out of or within a cell.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cyclic GMP transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0070838 -->
+
+    <owl:Class rdf:about="&obo;GO_0070838">
+        <rdfs:label rdf:datatype="&xsd;string">divalent metal ion transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0030001"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0072511"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-07-31T01:02:39Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0070838</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of divalent metal cations, any metal ion with a +2 electric charge, into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0070839 -->
+
+    <owl:Class rdf:about="&obo;GO_0070839">
+        <rdfs:label rdf:datatype="&xsd;string">divalent metal ion export</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070838"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-07-31T01:07:46Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0070839</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of divalent metal cations, any metal ion with a +2 electric charge, out of a cell or organelle.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0071421 -->
+
+    <owl:Class rdf:about="&obo;GO_0071421">
+        <rdfs:label rdf:datatype="&xsd;string">manganese ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006828"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-12-15T02:41:31Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which a manganese ion is transported from one side of a membrane to the other by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0071421</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">manganese ion membrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">transmembrane manganese transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0071577 -->
+
+    <owl:Class rdf:about="&obo;GO_0071577">
+        <rdfs:label rdf:datatype="&xsd;string">zinc ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006829"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-01-28T02:17:12Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which a zinc II ion is transported from one side of a membrane to the other by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0071577</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc II ion transmembrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc ion membrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc transmembrane transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0071578 -->
+
+    <owl:Class rdf:about="&obo;GO_0071578">
+        <rdfs:label rdf:datatype="&xsd;string">zinc ion import across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0071577"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098659"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-01-28T02:22:02Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006830</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006831</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0044749</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0071578</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0140160</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of zinc(2+) ions from outside of a cell, across the plasma membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high-affinity zinc II ion transmembrane import</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high-affinity zinc II ion transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">janelomax</oboInOwl:created_by>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">low-affinity zinc II ion transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc II ion plasma membrane import</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc II ion transmembrane import</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc import</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">zinc ion transmembrane import</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc uptake</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0071805 -->
+
+    <owl:Class rdf:about="&obo;GO_0071805">
+        <rdfs:label rdf:datatype="&xsd;string">potassium ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006813"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-09-03T02:43:49Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which a potassium ion is transported from one side of a membrane to the other.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0010163</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0071805</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high affinity potassium ion import</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high affinity potassium ion uptake</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high-affinity potassium ion import</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high-affinity potassium ion uptake</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">potassium ion membrane transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0072511 -->
+
+    <owl:Class rdf:about="&obo;GO_0072511">
+        <rdfs:label rdf:datatype="&xsd;string">divalent inorganic cation transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006812"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-12-16T04:11:02Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0072511</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of inorganic cations with a valency of two into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore. Inorganic cations are atoms or small molecules with a positive charge which do not contain carbon in covalent linkage.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0080160 -->
+
+    <owl:Class rdf:about="&obo;GO_0080160">
+        <rdfs:label rdf:datatype="&xsd;string">selenate transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015698"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-09-01T04:17:38Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0080160</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of selenate into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">donghui</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0090408 -->
+
+    <owl:Class rdf:about="&obo;GO_0090408">
+        <rdfs:label rdf:datatype="&xsd;string">phloem nitrate loading</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015706"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2011-06-01T10:06:21Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0090408</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process of loading nitrate into the sieve tube or companion cell of the phloem for long distance transport from source to sink.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">tanyaberardini</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0090452 -->
+
+    <owl:Class rdf:about="&obo;GO_0090452">
+        <rdfs:label rdf:datatype="&xsd;string">lithium ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0010351"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-09-24T14:04:41Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0090452</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of lithium ions across a membrane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">lithium ion import</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">lithium ion uptake</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">tanyaberardini</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0090676 -->
+
+    <owl:Class rdf:about="&obo;GO_0090676">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion transmembrane transport via low voltage-gated calcium channel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070588"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2016-03-23T10:15:23Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which a calcium ion is transported from one side of a membrane to the other by means of a low voltage-gated calcium channel.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0090676</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">generation of T-type calcium current</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">tanyaberardini</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0097037 -->
+
+    <owl:Class rdf:about="&obo;GO_0097037">
+        <rdfs:label rdf:datatype="&xsd;string">heme export</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015886"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2011-04-11T10:39:22Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0097037</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of heme out of a cell or organelle.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">paola</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0097401 -->
+
+    <owl:Class rdf:about="&obo;GO_0097401">
+        <rdfs:label rdf:datatype="&xsd;string">synaptic vesicle lumen acidification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_1902600"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-10-25T09:03:34Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0097401</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The acidification of the synaptic vesicle lumen via transport of protons into the vesicle. The resulting electrochemical gradient powers neurotransmitter loading.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">paola</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">synaptic vesicle lumen pH reduction</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">synaptic vesicle proton loading</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_synapse"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0097430 -->
+
+    <owl:Class rdf:about="&obo;GO_0097430">
+        <rdfs:label rdf:datatype="&xsd;string">copper ion import across prospore membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015677"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0035434"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-11-16T12:37:05Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0097430</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of copper ions from outside of a cell, across an ascospore-type prospore membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">copper ion import across prospore membrane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">copper ion import into ascospore-type prospore</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">copper ion transport into forespores</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">paola</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0097553 -->
+
+    <owl:Class rdf:about="&obo;GO_0097553">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion transmembrane import into cytosol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0060402"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070588"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-01-23T11:05:13Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which a calcium ion is transported from one side of a membrane to the other into the cytosol by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0097553</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">calcium transmembrane import into cytosol</oboInOwl:hasBroadSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">paola</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0097623 -->
+
+    <owl:Class rdf:about="&obo;GO_0097623">
+        <rdfs:label rdf:datatype="&xsd;string">potassium ion export across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0071805"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-12-16T11:10:45Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0071435</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0097623</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0098668</oboInOwl:hasAlternativeId>
+        <rdfs:comment rdf:datatype="&xsd;string">Merged as of ticket of related term https://github.com/geneontology/go-ontology/issues/14265</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of potassium ions from inside of a cell, across the plasma membrane and into the extracellular region.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">paola</oboInOwl:created_by>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">potassium export</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">potassium export across plasma membrane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">potassium ion export</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">potassium ion export from cell</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0097716 -->
+
+    <owl:Class rdf:about="&obo;GO_0097716">
+        <rdfs:label rdf:datatype="&xsd;string">copper ion transport across blood-brain barrier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006825"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2016-08-23T14:35:54Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0097716</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of copper (Cu) ions passing through the blood-brain barrier.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">copper ion transport across BBB</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">paola</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0097717 -->
+
+    <owl:Class rdf:about="&obo;GO_0097717">
+        <rdfs:label rdf:datatype="&xsd;string">copper ion transport across blood-cerebrospinal fluid barrier</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006825"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2016-08-23T14:37:33Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0097717</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of copper (Cu) ions passing through the blood-cerebrospinal fluid barrier.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">copper ion transport across BCB</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">copper ion transport across blood-CSF barrier</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">paola</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098655 -->
+
+    <owl:Class rdf:about="&obo;GO_0098655">
+        <rdfs:label rdf:datatype="&xsd;string">cation transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006812"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0034220"/>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ATP hydrolysis coupled cation transmembrane transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0098655</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0099132</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which a cation is transported across a membrane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098659 -->
+
+    <owl:Class rdf:about="&obo;GO_0098659">
+        <rdfs:label rdf:datatype="&xsd;string">inorganic cation import across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0099587"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0098659</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of inorganic cations from outside of a cell, across the plasma membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">inorganic cation import into cell</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098660 -->
+
+    <owl:Class rdf:about="&obo;GO_0098660">
+        <rdfs:label rdf:datatype="&xsd;string">inorganic ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0034220"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0098660</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which an inorganic ion is transported across a membrane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">inorganic ion membrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">transmembrane inorganic ion transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098662 -->
+
+    <owl:Class rdf:about="&obo;GO_0098662">
+        <rdfs:label rdf:datatype="&xsd;string">inorganic cation transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098655"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098660"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process in which an inorganic cation is transported from one side of a membrane to the other by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0098662</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Note that this term is not intended for use in annotating lateral movement within membranes.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">inorganic cation membrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">transmembrane inorganic cation transport</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098703 -->
+
+    <owl:Class rdf:about="&obo;GO_0098703">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion import across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0097553"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098659"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_1902656"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-02-07T13:07:59Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0098703</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:1990035</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of calcium ions from outside of a cell, across the plasma membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">calcium ion import into cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">calcium ion uptake into cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">mah</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098705 -->
+
+    <owl:Class rdf:about="&obo;GO_0098705">
+        <rdfs:label rdf:datatype="&xsd;string">copper ion import across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015677"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015679"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098659"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-04-03T13:26:04Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0015678</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0098705</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:1902861</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of copper ions from outside of a cell, across the plasma membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">copper cation import into cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">copper ion import into cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high affinity copper ion transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high affinity copper transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high-affinity copper ion transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">mah</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098706 -->
+
+    <owl:Class rdf:about="&obo;GO_0098706">
+        <rdfs:label rdf:datatype="&xsd;string">iron ion import across cell outer membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0034755"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-12-20T08:33:03Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0015683</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0097461</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0098706</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of iron ions from outside of a cell, across the cell outer membrane and into the periplasmic space.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">ferric ion import into cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferric iron import across cell outer membrane</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">ferric iron import into cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">ferric iron transmembrane transport</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high affinity ferric iron transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">high-affinity ferric iron transmembrane transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">paola</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098711 -->
+
+    <owl:Class rdf:about="&obo;GO_0098711">
+        <rdfs:label rdf:datatype="&xsd;string">iron ion import across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0033212"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0034755"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098659"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-12-20T08:29:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0097459</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0097460</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0098707</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0098711</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of iron ions from outside of a cell, across the plasma membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">ferrous ion import into cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">ferrous iron import across plasma membrane</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">ferrous iron import into cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">iron import into cell</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">iron ion import into cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">paola</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098716 -->
+
+    <owl:Class rdf:about="&obo;GO_0098716">
+        <rdfs:label rdf:datatype="&xsd;string">nickel cation import across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0035444"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098659"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-11-16T16:12:53Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0090509</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0098716</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of nickel cations from outside of a cell, across the plasma membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">nickel cation import into cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">tanyaberardini</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0098719 -->
+
+    <owl:Class rdf:about="&obo;GO_0098719">
+        <rdfs:label rdf:datatype="&xsd;string">sodium ion import across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0035725"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098659"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-08-03T16:55:52Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0097369</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0098719</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:1990118</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of sodium ions from outside of a cell, across the plasma membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pr</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sodium import</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">sodium ion import</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sodium ion import into cell</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0099180 -->
+
+    <owl:Class rdf:about="&obo;GO_0099180">
+        <rdfs:label rdf:datatype="&xsd;string">zinc ion import into synaptic vesicle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0062111"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0099180</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of Zn2+ ions from the cytoplasm into the lumen of a cytoplasmic vesicle.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Zn2+ import into synaptic vesicle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc import into synaptic vesicle</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_synapse"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0099587 -->
+
+    <owl:Class rdf:about="&obo;GO_0099587">
+        <rdfs:label rdf:datatype="&xsd;string">inorganic ion import across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098660"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0099587</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of inorganic ions from outside of a cell, across the plasma membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">inorganic ion import into cell</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0120029 -->
+
+    <owl:Class rdf:about="&obo;GO_0120029">
+        <rdfs:label rdf:datatype="&xsd;string">proton export across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_1902600"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2017-03-31T17:39:03Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0120029</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of hydrogen ions (protons) from inside a cell, across the plasma membrane and into the extracellular region.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">hydrogen ion export across plasma membrane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">hydrogen ion export from cell</oboInOwl:hasBroadSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">kchris</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">proton export across plasma membrane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">proton export from cell</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0140048 -->
+
+    <owl:Class rdf:about="&obo;GO_0140048">
+        <rdfs:label rdf:datatype="&xsd;string">manganese ion export across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0071421"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2017-06-23T14:25:00Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0140048</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of manganese ions from inside of a cell, across the plasma membrane and into the extracellular region.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">manganese ion export from cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pg</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0140141 -->
+
+    <owl:Class rdf:about="&obo;GO_0140141">
+        <rdfs:label rdf:datatype="&xsd;string">mitochondrial potassium ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0071805"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2017-11-24T13:26:42Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0140141</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which a potassium ion is transported across a mitochondrial membrane, into or out of the mitochondrion.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pg</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0140145 -->
+
+    <owl:Class rdf:about="&obo;GO_0140145">
+        <rdfs:label rdf:datatype="&xsd;string">copper ion export from vacuole</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0060003"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2017-12-13T15:02:39Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0140145</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of copper ions out of the vacuole across the vacuolar membrane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pg</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0140146 -->
+
+    <owl:Class rdf:about="&obo;GO_0140146">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion import into vacuole</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0060401"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070588"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_1901660"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2017-12-13T15:15:29Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0140146</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of calcium cations into the vacuole across the vacuolar membrane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pg</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0140147 -->
+
+    <owl:Class rdf:about="&obo;GO_0140147">
+        <rdfs:label rdf:datatype="&xsd;string">zinc ion export from vacuole</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070839"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0071577"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2017-12-13T15:21:10Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0140147</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of zinc ions from inside the vacuole across the vacuolar membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pg</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0140209 -->
+
+    <owl:Class rdf:about="&obo;GO_0140209">
+        <rdfs:label rdf:datatype="&xsd;string">zinc ion import into endoplasmic reticulum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0062111"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2018-03-19T10:40:01Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0140209</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed import of zinc(2+) from the cytosol, across the endoplasmic reticulum membrane, into the endoplasmic reticulum.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">This term covers zinc(2+) import *across* the endoplasmic reticulum membrane through a channel or pore. It does not cover import via vesicle fusion with endoplasmic reticulum membrane, as in this case transport does not involve crossing the membrane.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pg</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc ion import across endoplasmic reticulum</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc ion import into ER</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc(2+) import across endoplasmic reticulum</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc(2+) import into endoplasmic reticulum</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0140298 -->
+
+    <owl:Class rdf:about="&obo;GO_0140298">
+        <rdfs:label rdf:datatype="&xsd;string">endocytic iron import into cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0033212"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2018-12-10T10:31:31Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0140298</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Uptake of iron into a cell via binding to an extracellular receptor, which is internalized by endocytosis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">iron import into cell by endocytosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pg</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0140357 -->
+
+    <owl:Class rdf:about="&obo;GO_0140357">
+        <rdfs:label rdf:datatype="&xsd;string">heme export from vacuole to cytoplasm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0035351"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0097037"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2019-05-28T07:40:48Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="&xsd;string">Create new term see https://github.com/geneontology/go-ontology/issues/17407</rdfs:comment>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0140357</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of heme from inside the vacuole across the vacuolar membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pg</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901660 -->
+
+    <owl:Class rdf:about="&obo;GO_1901660">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion export</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006816"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-11-20T14:33:07Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1901660</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of calcium ion out of a cell or organelle.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">jl</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1901678 -->
+
+    <owl:Class rdf:about="&obo;GO_1901678">
+        <rdfs:label rdf:datatype="&xsd;string">iron coordination entity transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006826"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-11-22T15:43:15Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1901678</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of an iron coordination entity into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pr</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1902025 -->
+
+    <owl:Class rdf:about="&obo;GO_1902025">
+        <rdfs:label rdf:datatype="&xsd;string">nitrate import</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015706"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-03-27T21:32:58Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1902025</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of nitrate into a cell or organelle.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">nitrate influx</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">nitrate uptake</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">tb</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1902497 -->
+
+    <owl:Class rdf:about="&obo;GO_1902497">
+        <rdfs:label rdf:datatype="&xsd;string">iron-sulfur cluster transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_1901678"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-11-13T16:33:00Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1902497</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of an iron-sulfur cluster into, out of or within a cell, or between cells, by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1902600 -->
+
+    <owl:Class rdf:about="&obo;GO_1902600">
+        <rdfs:label rdf:datatype="&xsd;string">proton transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015672"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-12-20T11:08:37Z</oboInOwl:creation_date>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ATP hydrolysis coupled proton transport</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0006818</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0015991</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0015992</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1902600</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of a proton across a membrane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">hydrogen ion transmembrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">hydrogen ion transport</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">hydrogen transmembrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">hydrogen transport</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">passive proton transport, down the electrochemical gradient</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pr</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">proton transmembrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">proton transport</oboInOwl:hasBroadSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1902601 -->
+
+    <owl:Class rdf:about="&obo;GO_1902601">
+        <rdfs:label rdf:datatype="&xsd;string">silver ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098660"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-12-20T11:08:46Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1902601</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of silver ion across a membrane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pr</oboInOwl:created_by>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">silver transmembrane transport</oboInOwl:hasBroadSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1902602 -->
+
+    <owl:Class rdf:about="&obo;GO_1902602">
+        <rdfs:label rdf:datatype="&xsd;string">aluminum ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098660"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-12-20T11:09:01Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1902602</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which an aluminium ion is transported across a membrane.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">aluminium ion transmembrane transport</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">aluminium transmembrane transport</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">aluminum transmembrane transport</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pr</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1902656 -->
+
+    <owl:Class rdf:about="&obo;GO_1902656">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion import into cytosol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0060402"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070509"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-01-22T13:41:11Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1902656</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of calcium ion into a cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">calcium import into cytosol</oboInOwl:hasBroadSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">pr</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1903515 -->
+
+    <owl:Class rdf:about="&obo;GO_1903515">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion transport from cytosol to endoplasmic reticulum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0060401"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070588"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-10-02T14:51:20Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1903515</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of calcium ion from cytosol to endoplasmic reticulum.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">rl</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1903830 -->
+
+    <owl:Class rdf:about="&obo;GO_1903830">
+        <rdfs:label rdf:datatype="&xsd;string">magnesium ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015693"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098662"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2015-01-21T17:38:30Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1903830</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of magnesium ion across a membrane.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">mcc</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1903988 -->
+
+    <owl:Class rdf:about="&obo;GO_1903988">
+        <rdfs:label rdf:datatype="&xsd;string">iron ion export across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0034755"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-09-03T13:01:37Z</oboInOwl:creation_date>
+        <rdfs:comment rdf:datatype="&xsd;string">An example of this is mouse ferroportin (symbol Slc40a1, UniProtKB identifier: Q9JHI9).</rdfs:comment>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:1903414</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1903988</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of iron ions from inside of a cell, across the plasma membrane and into the extracellular region.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferrous iron export</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">ferrous iron export across plasma membrane</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">iron cation export</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">iron(2+) export</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">rl</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1904257 -->
+
+    <owl:Class rdf:about="&obo;GO_1904257">
+        <rdfs:label rdf:datatype="&xsd;string">zinc ion import into Golgi membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0062111"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2015-05-20T19:56:18Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1904257</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed import of zinc(2+) from the cytosol across the Golgi membrane into the Golgi apparatus.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">This term covers zinc(2+) import *across* the Golgi membrane through a channel or pore. It does not cover import via vesicle fusion with Golgi membrane, as in this case transport does not involve crossing the membrane.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">tb</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc II ion import across Golgi membrane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc ion import across Golgi membrane</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">zinc(2+) import across Golgi membrane</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1904334 -->
+
+    <owl:Class rdf:about="&obo;GO_1904334">
+        <rdfs:label rdf:datatype="&xsd;string">heme import across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0033212"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0035351"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2015-06-11T16:56:21Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1904334</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of heme from outside of a cell, across the plasma membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">al</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1904669 -->
+
+    <owl:Class rdf:about="&obo;GO_1904669">
+        <rdfs:label rdf:datatype="&xsd;string">ATP export</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0015867"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2015-09-09T16:33:06Z</oboInOwl:creation_date>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">ATP efflux</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1904669</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of ATP out of a cell or organelle.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">tb</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1905743 -->
+
+    <owl:Class rdf:about="&obo;GO_1905743">
+        <rdfs:label rdf:datatype="&xsd;string">calcium import into the mitochondrion involved in negative regulation of presynaptic cytosolic calcium concentration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0036444"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2016-12-06T10:53:17Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any mitochondrial calcium uptake that is involved in negative regulation of presynaptic cytosolic calcium concentration.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1905743</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">calcium ion transmembrane import into mitochondrion involved in negative regulation of presynaptic cytosolic calcium concentration</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dosumis</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mitochondrial calcium uptake involved in negative regulation of presynaptic cytosolic calcium concentration</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_synapse"/>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1990034 -->
+
+    <owl:Class rdf:about="&obo;GO_1990034">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion export across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0060401"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070588"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_1901660"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-02-07T13:01:29Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1990034</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of calcium ions from inside of a cell, across the plasma membrane and into the extracellular region.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">calcium ion efflux from cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">calcium ion export from cell</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">mah</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1990036 -->
+
+    <owl:Class rdf:about="&obo;GO_1990036">
+        <rdfs:label rdf:datatype="&xsd;string">calcium ion import into sarcoplasmic reticulum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070296"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0070509"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-02-07T23:22:27Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1990036</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of calcium ions into a sarcoplasmic reticulum.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">tb</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1990388 -->
+
+    <owl:Class rdf:about="&obo;GO_1990388">
+        <rdfs:label rdf:datatype="&xsd;string">xylem-to-phloem iron transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0006826"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-05-30T21:06:50Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1990388</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of iron ions into the phloem from the xylem.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">tb</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1990540 -->
+
+    <owl:Class rdf:about="&obo;GO_1990540">
+        <rdfs:label rdf:datatype="&xsd;string">mitochondrial manganese ion transmembrane transport</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0071421"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-11-19T11:03:09Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1990540</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process in which a manganese ion is transported across a mitochondrial membrane, into or out of the mitochondrion.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">vw</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1990573 -->
+
+    <owl:Class rdf:about="&obo;GO_1990573">
+        <rdfs:label rdf:datatype="&xsd;string">potassium ion import across plasma membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0071805"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0098659"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-12-04T09:48:12Z</oboInOwl:creation_date>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0010107</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1990573</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of potassium ions from outside of a cell, across the plasma membrane and into the cytosol.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">potassium import</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">potassium ion import</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">potassium ion uptake</oboInOwl:hasBroadSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">vw</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_1990616 -->
+
+    <owl:Class rdf:about="&obo;GO_1990616">
+        <rdfs:label rdf:datatype="&xsd;string">magnesium ion export from mitochondrion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0045016"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2015-01-21T22:06:42Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:1990616</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The directed movement of magnesium ions out of mitochondrial matrix into the cytosol by means of some agent such as a transporter or pore.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">magnesium ion efflux from mitochondrion</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">mcc</oboInOwl:created_by>
+        <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,1871 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;your_ontology/external/OGG-TCS_import.owl#"
+     xml:base="&obo;your_ontology/external/OGG-TCS_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="&obo;your_ontology/external/OGG-TCS_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117">
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000006 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OGG_0000000006">
+        <rdfs:label xml:lang="en">NCBI GeneID</rdfs:label>
+        <obo:IAO_0000115>A GeneID in the NCBI Gene database </obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yue Liu</obo:IAO_0000117>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000007 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OGG_0000000007">
+        <rdfs:label xml:lang="en">NCBI LocusTag</rdfs:label>
+        <obo:IAO_0000117>Oliver He, Yue Liu</obo:IAO_0000117>
+        <obo:IAO_0000115>the NCBI LocusTag name of a gene </obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000009 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OGG_0000000009">
+        <rdfs:label xml:lang="en">modification date</rdfs:label>
+        <obo:IAO_0000115>a date of content modification</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yue Liu</obo:IAO_0000117>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000015 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OGG_0000000015">
+        <rdfs:label xml:lang="en">organism NCBITaxon ID</rdfs:label>
+        <obo:IAO_0000115>The NCBITaxon ontology ID of an organism.</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He, Yue Liu</obo:IAO_0000117>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000018 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OGG_0000000018">
+        <rdfs:label xml:lang="en">type of gene</rdfs:label>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>an annotation property that specifies the type of a gene</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000019 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OGG_0000000019">
+        <rdfs:label xml:lang="en">nomenclature status</rdfs:label>
+        <obo:IAO_0000115>an annotation property that specifies a nomenclature status</obo:IAO_0000115>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000029 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OGG_0000000029">
+        <rdfs:label xml:lang="en">has GO association</rdfs:label>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <rdfs:comment>YH: use the convention: 
+GO_ID (EC: xx; Qualifier: xx; PMID: xxxxx;)
+where GO_ID is a GO ID, EC is the Evidence Code, Qualifier is a specific association type, and PMID is a PubMed ID of a paper that supports the gene-GO association. </rdfs:comment>
+        <obo:IAO_0000115>an annotation property that shows the GO information associated with a specific gene. </obo:IAO_0000115>
+        <rdfs:domain rdf:resource="&obo;OGG_0000000002"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000030 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OGG_0000000030">
+        <rdfs:label xml:lang="en">has PubMed association</rdfs:label>
+        <obo:IAO_0000115>An annotation property that represents a gene&apos;s association with PubMed publication(s). </obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <rdfs:comment>YH: use the format: 
+PMID: pmid1, pmid2, ...
+where pmid1 and pmid2 are specfic PubMed IDs (PMIDs). </rdfs:comment>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref">
+        <rdfs:label rdf:datatype="&xsd;string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000162 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000162">
+        <rdfs:label xml:lang="en">has disposition at all times</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000002 -->
+
+    <owl:Class rdf:about="&obo;OGG_0000000002">
+        <rdfs:label xml:lang="en">gene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_0000000010 -->
+
+    <owl:Class rdf:about="&obo;OGG_0000000010">
+        <rdfs:label xml:lang="en">protein-coding gene disposition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_2060511145 -->
+
+    <owl:Class rdf:about="&obo;OGG_2060511145">
+        <rdfs:label rdf:datatype="&xsd;string">protein-coding gene of Escherichia coli K-12</rdfs:label>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A gene of Escherichia coli str. K-12 that has a protein-coding gene disposition</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945003 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000945003">
+        <rdfs:label rdf:datatype="&xsd;string">cusR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">945003</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with CusS</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK0563</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG13851</oboInOwl:hasDbXref>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW0560</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 9278503; 11004187; 11283292; 11399769; 12368244; 12618449; 12627170; 12829268; 12829274; 12897016; 15522865; 15773991; 16397293; 17122336; 18631241</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b0571</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">silR</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ylcA</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945044 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000945044">
+        <rdfs:label rdf:datatype="&xsd;string">phoR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">945044</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK0394</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10733</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0006793; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW0390</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 2187152; 2411941; 2693738; 2824439; 2896188; 3550103; 4570598; 4903904; 6310121; 6995425; 7021308; 7050395; 8391104; 8432742; 9278503; 9495769; 11466297; 11782500; 12533489; 12897016; 14526009; 15919996; 16120447; 16397293; 16606699; 17187058; 18031348; 18051755; 22812494; 23333741</obo:OGG_0000000030>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">R1pho</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b0400</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">nmpB</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">phoR1</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with PhoB</dc:description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945046 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000945046">
+        <rdfs:label rdf:datatype="&xsd;string">phoB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">945046</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with PhoR (or CreC)</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK0393</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10728</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0006793; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW0389</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 324866; 1478454; 1482126; 1551836; 2157156; 2228961; 2411941; 2651888; 2693738; 2824439; 3054125; 3537313; 6260750; 6285149; 6307829; 6310121; 6343798; 7009567; 7016839; 7021308; 7050395; 7651320; 7699720; 7855419; 8098993; 8422984; 8432742; 8648643; 8691745; 8755861; 9016718; 9199401; 9278503; 9495769; 9555903; 9878437; 10089538; 10589831; 10653699; 10986267; 11073900; 11244058; 11466297; 11782500; 12015142; 12015152; 12351839; 12618449; 12897016; 14526009; 16154079; 16154092; 16397293; 16606699; 16818608; 16929106; 17020555; 17182055; 17543954; 18031348; 18631241; 19199332; 19371748; 19536200; 21829166; 23760278; 24199636</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b0399</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">phoRc</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945233 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000945233">
+        <rdfs:label rdf:datatype="&xsd;string">dpiB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">945233</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK0612</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG13646</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW0611</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 6997437; 7045076; 8626281; 8655536; 9079897; 9095416; 9278503; 9701802; 11889485; 12618449; 12853150; 12897016; 12951338; 15308764; 15361616; 15919996; 16120447; 16397293; 16559027; 16606699; 16934473; 17222132; 18667579; 18997424; 19202292; 19426207; 22101843</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b0619</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">citA</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">mpdB</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with citB</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ybeP</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945302 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000945302">
+        <rdfs:label rdf:datatype="&xsd;string">kdpE</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">945302</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with KdpD</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK0682</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10517</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW5096</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1482126; 1532387; 1532388; 1630316; 1630317; 1970651; 2157156; 2995318; 3318698; 3536861; 6787588; 7699720; 7855422; 8098993; 8223625; 8276778; 8331081; 8437514; 8905232; 9099740; 9139930; 9278503; 9651326; 9748442; 10712703; 11016946; 11114904; 11123681; 11371546; 11931551; 12115059; 12618449; 12897016; 14534307; 15555756; 16322582; 16397293; 16887611; 17536175; 18631241; 19101563; 19400808; 20146748; 22291906; 23073764</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b0694</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945369 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000945369">
+        <rdfs:label rdf:datatype="&xsd;string">qseB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">945369</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK3016</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG13026</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006355</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2993</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 9278503; 11929534; 12618449; 12897016; 16194231; 16397293; 16397770; 18631241; 19703104</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b3025</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">preA</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">quorum sensing DNA-binding response regulator in two-component regulatory system with QseC</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ygiX</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945595 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000945595">
+        <rdfs:label rdf:datatype="&xsd;string">torS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">945595</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK0984</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG12617</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009061; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW5135</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 8083154; 8809780; 9135110; 9278503; 10411745; 10648521; 11274133; 11562502; 12897016; 15919996; 16397293; 19748340</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b0993</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">hybrid sensory histidine kinase in two-component regulatory system with TorR</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">yccI</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945697 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000945697">
+        <rdfs:label rdf:datatype="&xsd;string">phoP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">945697</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with PhoQ</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK1116</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10731</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW1116</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1465423; 1482126; 1530848; 1729205; 1729240; 2157156; 7699720; 8098993; 8900137; 8905232; 9278503; 9603873; 10464230; 10775270; 10807931; 11435407; 12123454; 12139620; 12218035; 12429059; 12618449; 12670981; 12702718; 12813061; 12897016; 13129944; 14523115; 15126461; 15703297; 15883881; 16041131; 16397293; 16818608; 17543954; 17545283; 17628149; 17909183; 17998538; 18631241; 18792678; 18987315; 19426448; 19702577; 19772633; 19889087; 20345657; 22267510; 23300478</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b1130</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945788 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000945788">
+        <rdfs:label rdf:datatype="&xsd;string">narX</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">945788</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK1216</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10646</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009061; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW1213</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1528845; 1812811; 1999382; 2144276; 2544557; 2649492; 2657652; 2668029; 2832370; 3276662; 7601854; 7855431; 8051011; 8473280; 8501030; 8905232; 9006026; 9220011; 9278503; 9426129; 10464202; 11994152; 12486044; 12546643; 12581159; 12644479; 12897007; 12897016; 15919996; 15995204; 16377617; 16397293; 18375557; 19217390; 19966007; 19968795; 23517441</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b1222</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">frdR</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">narR</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with NarL</dc:description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945795 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000945795">
+        <rdfs:label rdf:datatype="&xsd;string">narL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">945795</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with NarX (or NarQ)</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK1215</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10643</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0009061; GO_0016563; GO_0016564</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW1212</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1482126; 1629213; 1812811; 1999382; 2066339; 2157156; 2173895; 2544557; 2648330; 2649492; 2657652; 2832370; 3035558; 3054467; 3276662; 3308846; 6261088; 7050087; 7601827; 7601854; 7643383; 7699720; 7854119; 8057356; 8098993; 8501030; 8780507; 8905232; 9278503; 9521685; 11115116; 12079504; 12581159; 12618449; 12644479; 12818201; 12897016; 12923080; 12951338; 15225315; 15978080; 15995204; 16199562; 16262254; 16377617; 16397293; 16417496; 16606699; 16936015; 17366475; 17449618; 17720788; 17965164; 18227264; 18631241; 19245365; 19251855; 19968795; 20634237</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b1221</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">frdR</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945855 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000945855">
+        <rdfs:label rdf:datatype="&xsd;string">rssB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">945855</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK1230</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG12121</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW1223</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 7997161; 8282700; 8635466; 8637901; 8885260; 8905232; 9278503; 9495753; 9515704; 9882671; 10339606; 10572304; 10672187; 10869095; 11442836; 11566997; 12354235; 12618449; 12897016; 12912910; 14536077; 14671322; 15489452; 15530384; 15629914; 16267278; 16291649; 16397293; 16556229; 16600914; 16606699; 17067847; 17122336; 17332743; 17403784; 18036141; 18239914; 18383615; 18519731; 18616600; 18792681; 19124769; 19125225; 19767441; 19781640</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b1235</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">hnr</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">mviA</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">response regulator binding RpoS to initiate proteolysis by ClpXP; required for the PcnB-degradosome interaction during stationary phase</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">sprE</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">verA</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ychL</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000945978 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000945978">
+        <rdfs:label rdf:datatype="&xsd;string">cusS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">945978</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK0562</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG13642</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW5082</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 9278503; 11004187; 11283292; 11399769; 12829268; 12829274; 12897016; 15522865; 15919996; 16120447; 16397293; 22348296</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b0570</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with CusR, senses copper ions</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">silS</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ybcZ</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946182 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946182">
+        <rdfs:label rdf:datatype="&xsd;string">torR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946182</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with TorS</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK0986</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG12615</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0009061; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW0980</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1482126; 2157156; 7699720; 7798146; 8083154; 8098993; 8596446; 8905232; 9278503; 10648521; 11274133; 12618449; 12897016; 16322582; 16397293; 16606699; 18631241</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b0995</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946199 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946199">
+        <rdfs:label rdf:datatype="&xsd;string">rstA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946199</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK1603</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG13190</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW1600</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1495392; 9097039; 9278503; 12399493; 12618449; 12813061; 12897016; 12951338; 15126461; 15522865; 15748988; 15883881; 16397293; 16849790; 17293428; 17468243; 18631241; 19376873; 19465656</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b1608</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">multicopy supressor of yjeE, yeaZ or ygjD deletion lethality, predicted response regulator of two-component regulatory system with sensor protein RstB</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">urpT</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946326 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946326">
+        <rdfs:label rdf:datatype="&xsd;string">phoQ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946326</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK1115</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10732</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW1115</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1465423; 1729240; 8548821; 8900137; 8905232; 9278503; 9603873; 10464230; 10775270; 12218035; 12429059; 12670981; 12702718; 12813061; 12897016; 13129944; 14523115; 15126461; 15522865; 15703297; 15883881; 15919996; 16041131; 16120447; 16397293; 17543954; 17628149; 17909183; 17985211; 17998538; 18348979; 18468622; 18792678; 18987315; 19702577; 19889087; 20345657; 20404199; 22267510; 22651704; 23300478</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b1129</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with PhoP</dc:description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946393 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946393">
+        <rdfs:label rdf:datatype="&xsd;string">cheY</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946393</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK1883</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10150</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0042330</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW1871</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 353036; 1390767; 1482126; 1869568; 2157156; 2201404; 2644646; 2646634; 2689446; 3076076; 3185734; 3280143; 3510184; 6089173; 6090423; 6307970; 7034961; 7045071; 7592359; 7592655; 7615544; 7623663; 7699720; 7723026; 7855419; 8098993; 8176739; 8251514; 8354264; 8524808; 8631757; 8632450; 8763950; 8809743; 8820640; 9010924; 9030562; 9030763; 9097040; 9115243; 9188789; 9209042; 9278503; 9437425; 9473056; 9560203; 9636149; 9657998; 9748445; 9761838; 9761905; 10029518; 10096080; 10594818; 10731410; 10748173; 10748215; 10819997; 10894745; 10972797; 11023787; 11134926; 11135671; 11243808; 11279165; 11359578; 11410584; 12080332; 12145642; 12232047; 12511501; 12591864; 12591865; 12618449; 12736245; 12897016; 12951338; 14563873; 14741223; 15042093; 15175281; 15189900; 15236585; 15289606; 15327941; 15327942; 15351654; 15375146; 15539117; 15569922; 15601687; 15741343; 15909991; 16208378; 16306993; 16369945; 16397293; 16452309; 16630631; 16683020; 16707688; 17050923; 17122336; 17172298; 17339063; 17609139; 17609141; 17609145; 17628132; 17708539; 17998207; 18234227; 18427119; 18476921; 18557815; 18619461; 18644380; 18687900; 18711126; 18801331; 19096502; 19246239; 19467245; 19494578; 19540260; 19547746; 19646451; 20345663; 20398208; 20439729; 20498085; 21422514; 21642453; 21764922; 23454041; 23648838</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b1882</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">chemotaxis regulator transmitting signal to flagellar motor component</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946394 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946394">
+        <rdfs:label rdf:datatype="&xsd;string">cheB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946394</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK1884</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10147</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0006464; GO_0042330</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW1872</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 353036; 1547277; 2644646; 2646634; 2661528; 2677005; 3007436; 3056911; 3076082; 3280143; 3510184; 3539934; 6307970; 7034961; 7045071; 8420965; 9097040; 9209042; 9278503; 10231491; 10464232; 10850799; 10894745; 11243808; 11435446; 11669626; 11742065; 12618449; 15111386; 15175281; 15175286; 15306010; 15375146; 15539117; 15916610; 16030204; 16306993; 16397293; 16446460; 16565056; 16855257; 16924119; 17122336; 17208180; 17609145; 18179279; 18427119; 19156130; 20972792; 21978288</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b1883</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">fused chemotaxis regulator: protein-glutamate methylesterase in two-component regulatory system with CheA</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946401 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946401">
+        <rdfs:label rdf:datatype="&xsd;string">cheA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946401</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK1889</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10146</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0042330</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW1877</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 324984; 370826; 392505; 1326408; 1495964; 1537797; 1624413; 1737035; 1991711; 1992467; 2002011; 2033064; 2068106; 2254280; 2403544; 2558046; 2646634; 2832069; 2847160; 3032955; 3313398; 3510184; 3520334; 4567134; 6213619; 6305515; 6307970; 6374654; 6449010; 6784119; 7577981; 7589525; 7592359; 7592655; 7724572; 7751280; 7929006; 7961989; 8021207; 8415608; 8486661; 8491182; 8524808; 8555213; 8639521; 8663384; 8755897; 8820640; 8820644; 8943256; 9020767; 9097040; 9106209; 9153237; 9278503; 9305977; 9315712; 9437425; 9442881; 9495737; 9636149; 9791174; 9822812; 10029518; 10464232; 10648522; 10676817; 10859356; 10894745; 10972797; 11056533; 11056546; 11092844; 11134926; 11243808; 11923283; 11964403; 12119290; 12644507; 14621982; 14726213; 14741223; 14769919; 15042093; 15090507; 15111386; 15170328; 15175281; 15236585; 15289606; 15306010; 15327941; 15375146; 15451661; 15539117; 15569922; 15572451; 15766267; 15853891; 16030204; 16245946; 16293695; 16306993; 16369945; 16397293; 16621823; 16630631; 16679313; 16707688; 16740938; 16846213; 16856941; 16973743; 17122336; 17360429; 17609125; 17609145; 17628132; 17694049; 17708539; 18711126; 19053273; 19096502; 19256549; 19502407; 19542283; 19580745; 19581362; 19705835; 19768197; 19783813; 21606342; 21636905; 21642453; 21978288; 22355139; 23802570; 24163342</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b1888</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">fused chemotactic sensory histidine kinase in two-component regulatory system with CheB and CheY: sensory histidine kinase/signal sensing protein</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946424 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946424">
+        <rdfs:label rdf:datatype="&xsd;string">uvrY</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946424</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with BarA</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK1913</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11140</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW1899</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 3295776; 3515318; 8951818; 9097040; 9278503; 10048039; 11022030; 11244064; 11768529; 12193630; 12533459; 12618449; 12897016; 15130116; 16237014; 16397293; 16529647; 16980446; 17366475; 18792681</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b1914</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">gacA</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">sirA</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">yecB</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946486 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946486">
+        <rdfs:label rdf:datatype="&xsd;string">yedW</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946486</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK1965</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG14045</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW5322</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 9097040; 9278503; 10734204; 12618449; 12897016; 12951338; 15522865; 15556475; 15690043; 15773991; 16397293; 18631241</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b1969</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">predicted DNA-binding response regulator in two-component system with YedV</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946487 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946487">
+        <rdfs:label rdf:datatype="&xsd;string">yedV</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946487</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK1964</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG14044</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW1951</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 9097040; 9278503; 12897016; 15522865; 15773991; 15919996; 16120447; 16397293</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b1968</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">predicted sensory kinase in two-component regulatory system with YedW</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946605 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946605">
+        <rdfs:label rdf:datatype="&xsd;string">baeR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946605</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with BaeS</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2075</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11618</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2064</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1482126; 2157156; 7699720; 8098993; 8282725; 9097040; 9278503; 12107133; 12107134; 12354228; 12456787; 12618449; 12897016; 12951338; 15522865; 15686558; 15716448; 16397293; 17884222; 18039828; 18631241; 19091747; 19763168; 21515766</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2079</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946611 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946611">
+        <rdfs:label rdf:datatype="&xsd;string">baeS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946611</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2074</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11617</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2063</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 8282725; 9097040; 9278503; 12107133; 12107134; 12354228; 12456787; 12618449; 12897016; 12951338; 15686558; 15716448; 15919996; 16120447; 16397293; 17884222; 18039828; 19763168; 21515766</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2078</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with BaeR</dc:description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946717 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946717">
+        <rdfs:label rdf:datatype="&xsd;string">rcsD</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946717</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2209</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG12385</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2204</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 2404948; 7984428; 9097040; 9278503; 11309126; 11758943; 12410838; 12581159; 12864862; 12897016; 13129944; 14514676; 15375134; 15452440; 15476819; 15901715; 16153174; 16166540; 16397293; 16427772; 16606699; 16607041; 16621809; 17005198; 17185552; 17575454; 17941710; 18192383; 21481780</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2216</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">phosphotransfer intermediate protein in two-component regulatory system with RcsBC</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">yojN</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">yojP</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">yojQ</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946723 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946723">
+        <rdfs:label rdf:datatype="&xsd;string">ypdA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946723</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2376</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG14148</oboInOwl:hasDbXref>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW5388</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 7966317; 9205837; 9278503; 12897016; 12914674; 15919996; 16120447; 16397293</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2380</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensor kinase regulating yhjX; pyruvate-responsive YpdAB two-component system</dc:description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946744 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946744">
+        <rdfs:label rdf:datatype="&xsd;string">kdpD</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946744</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK0683</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10516</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW0683</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 355227; 1532387; 1532388; 1630316; 1630317; 2995318; 3318698; 3536861; 4908783; 6787588; 7499326; 7715454; 7855422; 8223625; 8276778; 8331081; 8437514; 8798785; 8905232; 9099740; 9139930; 9278503; 9651326; 9675324; 9748442; 9756874; 9858704; 10550471; 10712703; 10747873; 11016946; 11114904; 11123681; 11371546; 11931551; 12115059; 12420175; 12535080; 12694185; 12897016; 14534307; 15555756; 15919996; 16120447; 16397293; 16484207; 16559072; 16887611; 17704218; 17710642; 17985211; 18245296; 18433452; 19101563; 19400808; 19589130; 19850005; 20146748; 20498088; 23651428</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b0695</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">fused sensory histidine kinase in two-component regulatory system with KdpE: signal sensing protein</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">kac</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946841 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946841">
+        <rdfs:label rdf:datatype="&xsd;string">evgA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946841</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with EvgS</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2365</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11609</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2366</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1289796; 8125343; 9278503; 9535079; 10825546; 10923791; 11157960; 11914367; 12135487; 12399493; 12456787; 12618449; 12670992; 12694615; 12897016; 12951338; 14523115; 15126461; 15489450; 16397293; 16428726; 17998538; 18792678; 19352034</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2369</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946844 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946844">
+        <rdfs:label rdf:datatype="&xsd;string">evgS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946844</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2366</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11610</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2367</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1289796; 8125343; 9278503; 9501520; 9532784; 9535079; 10825546; 10923791; 11157960; 11914367; 12135487; 12399493; 12456787; 12581159; 12618449; 12670992; 12694615; 12897016; 12900028; 14523115; 15126461; 15489450; 16397293; 16606699; 17122336; 17985211; 17998538; 18792678; 19352034</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2370</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">hybrid sensory histidine kinase in two-component regulatory system with EvgA</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000946948 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000946948">
+        <rdfs:label rdf:datatype="&xsd;string">narQ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">946948</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2464</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11460</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009061; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2453</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1447165; 1508040; 1528845; 8051011; 8501030; 9220011; 9278503; 12546643; 12581159; 12644479; 12897007; 12897016; 14622424; 15919996; 15947133; 16377617; 16397293; 16417496; 18375557; 19968795</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2469</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with NarP (NarL)</dc:description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947008 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000947008">
+        <rdfs:label rdf:datatype="&xsd;string">dpiA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">947008</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with citA</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK0613</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG13544</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW0612</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 6997437; 8626281; 8655536; 9079897; 9095416; 9223636; 9278503; 9701802; 11889485; 12167547; 12618449; 12897016; 12951338; 14526013; 15308764; 15361616; 16397293; 16559027; 16934473; 18997424; 19202292; 19426207; 22101843</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b0620</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">citB</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">criR</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">mpdA</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947013 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000947013">
+        <rdfs:label rdf:datatype="&xsd;string">glrK</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">947013</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2553</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG13461</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW5407</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 9205844; 9278503; 12897016; 15522865; 15919996; 16120447; 16397293; 17220220; 17854828; 19289831; 19843219</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2556</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">qseE</obo:IAO_0000118>
+        <dc:description rdf:datatype="&xsd;string">sensor protein kinase regulating glmY sRNA in two-component system with response regulator GlrR</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">yfhK</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">yfhZ</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947042 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000947042">
+        <rdfs:label rdf:datatype="&xsd;string">glrR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">947042</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2551</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11285</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2538</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 2034230; 2885322; 8226691; 8412694; 9278503; 10734204; 12618449; 12897016; 15522865; 15556475; 16397293; 17220220; 19289831; 19843219</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2554</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">qseF</obo:IAO_0000118>
+        <dc:description rdf:datatype="&xsd;string">response regulator regulating glmY sRNA in two-component system with sensor protein GlrK</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">yfhA</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947079 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000947079">
+        <rdfs:label rdf:datatype="&xsd;string">fimZ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">947079</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK0528</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11103</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0009289; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW5073</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 2183007; 7592479; 9278503; 12618449; 12897016; 12951338; 16397293</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b0535</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">predicted DNA-binding transcriptional regulator</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ybcA</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947174 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000947174">
+        <rdfs:label rdf:datatype="&xsd;string">qseC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">947174</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK3017</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG13027</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2994</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 9278503; 11929534; 12076823; 12847292; 12897016; 15919996; 16120447; 16194231; 16397293; 16803956; 17949301; 19289831; 19703104; 20498088; 20594156</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b3026</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">preB</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">quorum sensing sensory histidine kinase in two-component regulatory system with QseB</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ygiY</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947255 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000947255">
+        <rdfs:label rdf:datatype="&xsd;string">barA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">947255</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2780</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11367</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2757</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1574005; 7957084; 9278503; 10931332; 11022030; 11768529; 12193624; 12193630; 12533459; 12581159; 12897016; 14619967; 15522865; 15919996; 16237014; 16397293; 16529647; 16980446; 17122336; 18792681; 20118252</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">airS</obo:IAO_0000118>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2786</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">gacC</obo:IAO_0000118>
+        <dc:description rdf:datatype="&xsd;string">hybrid sensory histidine kinase, in two-component regulatory system with UvrY</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947272 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000947272">
+        <rdfs:label rdf:datatype="&xsd;string">envZ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">947272</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK3391</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10269</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW3367</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 387722; 1311295; 1323560; 1662380; 1700256; 1741624; 1885551; 1901856; 2005134; 2552265; 2558046; 2668953; 2824492; 2845093; 2851704; 2997120; 3157679; 3294816; 3536870; 6292199; 6292200; 6311806; 6337119; 6452446; 6761552; 6799653; 6820310; 6997269; 7021856; 7042694; 7855421; 8106326; 8132603; 9070221; 9188462; 9209057; 9278503; 9409762; 9538242; 9817206; 10192921; 10426948; 10760160; 10884412; 10947842; 11533042; 11973328; 12139613; 12453214; 12453215; 12672798; 12691749; 12754242; 12767831; 12897016; 15175316; 15316026; 15357641; 15522091; 15571621; 15919996; 16077119; 16120447; 16164563; 16397293; 16553882; 16677301; 17426813; 17609131; 17609132; 17635923; 17941710; 18077424; 18193944; 18363324; 18363790; 18438992; 18761686; 19432797; 19445950; 20849081; 20889743; 21854787; 22392928; 22543870; 23333741</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b3404</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">cpr</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ompB</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">perA</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with OmpR</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">tpo</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947395 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000947395">
+        <rdfs:label rdf:datatype="&xsd;string">ypdB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">947395</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2377</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG14149</oboInOwl:hasDbXref>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2378</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 9278503; 12618449; 12897016; 16397293; 16606699; 17187058</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2381</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">response regulator activating yhjX; pyruvate-responsive YpdAB two-component system</dc:description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947441 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000947441">
+        <rdfs:label rdf:datatype="&xsd;string">rcsB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">947441</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with RcsC and YojN</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2210</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10821</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0009242; GO_0016563; GO_0016564; GO_0042280</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2205</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1482126; 1522067; 1597415; 1943696; 1999391; 2157156; 2404948; 2836365; 3029041; 3888955; 7534408; 7699720; 7855424; 8098993; 8366025; 8576059; 8759878; 8763957; 9097040; 9209051; 9278503; 9364917; 9882673; 10564486; 10702265; 11309126; 11566985; 11758943; 11976318; 12410838; 12581159; 12618449; 12670962; 12864862; 12867437; 12897016; 12951338; 13129944; 14514676; 14766922; 15004283; 15375134; 15476819; 15838058; 15901715; 16000739; 16153174; 16166540; 16397293; 16427772; 16606699; 16607041; 16621809; 16740933; 16776655; 16858726; 17185552; 17187058; 17366475; 17379715; 17468243; 17575454; 17644608; 18192383; 18792681; 19026860; 19136591; 19240136; 19552773; 19806199; 19943899; 20189963; 20435136; 21481780; 21571995; 22295907; 23392250; 23852870</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2217</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">viaA</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947444 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000947444">
+        <rdfs:label rdf:datatype="&xsd;string">atoC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">947444</obo:OGG_0000000006>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">Az</obo:IAO_0000118>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2213</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11668</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0006596; GO_0016563; GO_0019395</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2214</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1482126; 2157156; 2883171; 3025185; 3116274; 4563344; 4942769; 7618860; 7699720; 8098993; 8346225; 9097040; 9278503; 9781887; 12618449; 12897016; 15200682; 16153782; 16397293; 16564134; 16819267; 17224065; 17475408; 17537579; 17616594; 18235991; 18855762; 19198978; 20563612; 21295116</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2220</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">fused response regulator of ato operon, in two-component system with AtoS: response regulator/sigma54 interaction protein</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947887 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000947887">
+        <rdfs:label rdf:datatype="&xsd;string">arcB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">947887</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK3200</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10062</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009060; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW5536</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1328158; 1512197; 1592804; 1597416; 1812811; 2070418; 2170337; 2201868; 2565334; 2644240; 2964639; 7855430; 7957084; 8022271; 8071220; 8132465; 8226939; 8412675; 8825099; 8892825; 9054511; 9188789; 9278503; 9286997; 9302022; 9489669; 9632255; 9683496; 9685739; 9761838; 9830034; 9972245; 10531481; 10585483; 10734219; 10770787; 10781568; 10788795; 10851007; 10940038; 10947842; 10998176; 11133990; 11148031; 11286551; 11423658; 11527965; 11782500; 12486057; 12562763; 12576590; 12581159; 12897016; 14711822; 15028693; 15326287; 15669087; 15670209; 15699038; 15838044; 15838055; 15919996; 16140472; 16291649; 16397293; 16709570; 16750836; 17213678; 18223071; 18792681; 18824089; 19593437; 19614590; 19682256; 19715602; 19851741; 19897650; 19933363; 20498088; 23064346; 23331412; 23645604</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <dc:description rdf:datatype="&xsd;string">aerobic respiration control sensor histidine protein kinase, cognate to two-component response regulators ArcA and RssB</dc:description>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b3210</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000947913 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000947913">
+        <rdfs:label rdf:datatype="&xsd;string">ompR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">947913</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with EnvZ</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK3392</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10672</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0009274; GO_0016563; GO_0016564</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW3368</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1310090; 1311295; 1321117; 1482126; 1618729; 1657696; 1662380; 1695892; 1700256; 1741624; 1769957; 1885551; 2005134; 2157156; 2552265; 2558046; 2845093; 2997120; 3010044; 3157679; 3294816; 3536870; 6263866; 6281238; 6292199; 6292200; 6799653; 7021856; 7042694; 7565603; 7568033; 7642497; 7699720; 7855421; 8098993; 8876642; 8989318; 9016718; 9188462; 9278503; 9422609; 9484896; 9573197; 10192921; 10498711; 10653699; 10760160; 10802181; 10947842; 11717281; 11812125; 11952900; 11973328; 12077136; 12453214; 12453215; 12618449; 12818201; 12897016; 12951338; 15004283; 15175316; 15357641; 15571621; 15713883; 15743943; 15743952; 15979641; 16000739; 16385048; 16397293; 16553882; 16606699; 16618701; 16855227; 17122336; 17416652; 17426813; 17628138; 17941710; 18077424; 18193944; 18195018; 18223071; 18363790; 18438992; 18761686; 18953042; 19383700; 19432797; 19445950; 19502392; 19542330; 19552773; 20889743; 21131484; 21179024; 23175504</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b3405</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">kmt</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ompB</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948178 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948178">
+        <rdfs:label rdf:datatype="&xsd;string">uhpA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948178</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system wtih UhpB</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK3660</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11051</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0016052; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW3644</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1482126; 1569007; 1569008; 2157156; 3038843; 3042748; 3301805; 6309737; 6350260; 7596290; 7686882; 7699720; 8098993; 8144492; 8999880; 9220010; 9278503; 10512697; 10572130; 10913075; 10966457; 11053370; 11325944; 11739766; 11782500; 11976297; 12107138; 12618449; 12897016; 12936984; 16397293; 16606699; 17463081</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b3669</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948195 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948195">
+        <rdfs:label rdf:datatype="&xsd;string">uhpB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948195</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK3659</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11052</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009274; GO_0016052; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW3643</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1569007; 1569008; 3038843; 3042748; 3301805; 7596290; 7686882; 8144492; 8349544; 9278503; 11053370; 11325944; 11739766; 12107138; 12876315; 12897016; 12914674; 15174130; 15919996; 16397293; 17463081</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b3668</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory sytem with UhpA</dc:description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948360 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948360">
+        <rdfs:label rdf:datatype="&xsd;string">glnL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948360</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK3862</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10387</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0006542; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW3840</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1352516; 2016302; 2574599; 2839825; 2858855; 2865194; 2874557; 2882477; 2904147; 3027504; 3536843; 6113591; 6115384; 6120929; 6120930; 6122676; 6130464; 6131062; 6148334; 7901195; 7961767; 8226644; 8346018; 9278503; 9737856; 9737857; 9892680; 10074086; 10231487; 10819971; 11063580; 11063581; 11782500; 11931552; 12057972; 12366843; 12368244; 12562801; 12627170; 12730324; 12838411; 12873150; 12897016; 15150219; 15157101; 15208307; 15289551; 15317778; 15357304; 16397293; 16945478; 17628156; 19877669; 19877670; 23088566</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b3869</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">glnR</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ntrB</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with GlnG</dc:description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948361 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948361">
+        <rdfs:label rdf:datatype="&xsd;string">glnG</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948361</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK3861</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10385</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0006542; GO_0016563; GO_0016564</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW3839</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 41243; 1321122; 1350679; 1356964; 2574599; 2848245; 2858855; 2871943; 2882477; 2904147; 6111550; 6113591; 6115384; 6120929; 6122676; 6130464; 6131062; 6148334; 7961766; 8094391; 8346018; 8407777; 9278503; 9696779; 9720863; 9737855; 9737857; 10074086; 10779705; 10891265; 10960104; 11063581; 11121068; 11528004; 11782500; 12180911; 12366843; 12617754; 12618449; 12730324; 12897016; 14561776; 14563853; 15208307; 15317778; 15327947; 15659685; 16397293; 16531068; 16553838; 16751184; 16945478; 17284458; 17628156; 18631241; 19576227; 19877669; 19877670</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b3868</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">fused DNA-binding response regulator in two-component regulatory system with GlnL: response regulator/sigma54 interaction protein</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">glnT</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ntrC</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948404 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948404">
+        <rdfs:label rdf:datatype="&xsd;string">cpxR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948404</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with CpxA</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK3905</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10020</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0006805; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW3883</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1482126; 2157156; 3058985; 7699720; 7883164; 8098993; 8294007; 8346018; 8748033; 9159398; 9159399; 9278503; 9401031; 10464196; 10483736; 10542180; 10671468; 10708362; 10972835; 11514504; 11717281; 11830644; 12081643; 12354228; 12368244; 12618449; 12627170; 12670966; 12897016; 12951338; 15205435; 15576781; 15629938; 15686558; 15690043; 15743943; 15743952; 15773991; 15852340; 16077119; 16397293; 16436431; 16487683; 16861804; 17142356; 17259177; 17307737; 18069965; 18223085; 18227171; 18631241; 18761686; 19091747; 19103922; 19432797; 19445950; 19596441; 19601955; 19763168; 19893610; 24163343</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b3912</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">yiiA</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948405 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948405">
+        <rdfs:label rdf:datatype="&xsd;string">cpxA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948405</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK3904</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10163</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0006805; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW3882</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 353502; 2185221; 2565334; 3007473; 3058985; 3539185; 3894006; 6097795; 6097796; 6102380; 6106014; 6802799; 6997275; 6998969; 7037752; 7883164; 8294007; 8346018; 8432716; 8748033; 9023180; 9159398; 9159399; 9278503; 9401031; 9642209; 10464196; 10483736; 10542180; 10671468; 10708362; 10966457; 10972835; 12081643; 12670966; 12897007; 12897016; 15205435; 15522865; 15576781; 15629938; 15773991; 15919996; 16077119; 16120447; 16397293; 16487683; 16861804; 17122336; 17142356; 17259177; 17985211; 18069965; 18223085; 18227171; 18761686; 18824089; 19013277; 19103922; 19432797; 19445950; 19596441; 19601955; 19763168; 21179024; 21349329; 24163343</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b3911</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ecfB</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">eup</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">rssE</obo:IAO_0000118>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with CpxR</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ssd</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948505 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948505">
+        <rdfs:label rdf:datatype="&xsd;string">zraR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948505</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK3996</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10482</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0006113; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW3968</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1482126; 2045358; 2157156; 2666400; 7699720; 8098993; 8265357; 9278503; 11243806; 12618449; 12897016; 15522865; 15659689; 16397293; 16531068; 17372774; 23049878</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b4004</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">fused DNA-binding response regulator in two-component regulatory system with ZraS: response regulator/sigma54 interaction protein</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">hydG</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948506 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948506">
+        <rdfs:label rdf:datatype="&xsd;string">zraS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948506</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK3995</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10008</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006113; GO_0006464; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW3967</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 2666400; 8265357; 9278503; 11243806; 12897016; 15522865; 15919996; 16120447; 16397293; 17985211</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b4003</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">hydH</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with ZraR</dc:description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948609 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948609">
+        <rdfs:label rdf:datatype="&xsd;string">creC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948609</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK4391</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10730</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW4362</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1551826; 2228961; 2411941; 2835585; 3275616; 3531171; 3542979; 6092847; 6277871; 6330029; 6381964; 7021308; 7610040; 8432742; 9278503; 11350954; 12429059; 12897016; 15522865; 15919996; 16120447; 16397293; 16818608; 18031348; 18223071; 18326580; 18375564</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b4399</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">phoM</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with CreB or PhoB, regulator of the CreBC regulon</dc:description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948631 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948631">
+        <rdfs:label rdf:datatype="&xsd;string">basR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948631</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with BasS</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK4106</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11615</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW4074</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1482126; 2157156; 7565089; 7610040; 7699720; 8098993; 8282725; 8391535; 8524935; 9278503; 9371451; 10373459; 10775270; 11222580; 11535605; 12139617; 12399493; 12618449; 12676988; 12897016; 15322361; 15522865; 15556475; 15569938; 15659161; 15659689; 16397293; 16428424; 17686460; 18631241; 20384697; 22442305; 24062463</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b4113</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">pmrA</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948632 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948632">
+        <rdfs:label rdf:datatype="&xsd;string">basS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948632</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK4105</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11614</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW4073</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 7610040; 8282725; 9278503; 10775270; 12676988; 12897016; 15322361; 15522865; 15659689; 15919996; 16120447; 16397293; 17985211; 22442305</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b4112</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">pmrB</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with BasR</dc:description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948639 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948639">
+        <rdfs:label rdf:datatype="&xsd;string">dcuS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948639</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK4118</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG12465</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009061; GO_0009274</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW4086</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 7610040; 9278503; 9765574; 9973351; 11803016; 12167640; 12754220; 12897016; 12907689; 14996819; 15781452; 15862241; 15919996; 15995204; 16120447; 16397293; 16606699; 17416661; 17618229; 18667579; 18701447; 18820688; 18957436; 19661178; 19789137; 20453099; 22101843; 22780562</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b4125</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with DcuR, regulator of anaerobic fumarate respiration</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">yjdH</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948640 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948640">
+        <rdfs:label rdf:datatype="&xsd;string">dcuR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948640</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with DcuS</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK4117</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG12464</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0009061</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW4085</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 7610040; 9278503; 9624689; 9765574; 9973351; 12167640; 12618449; 12754220; 12897016; 12951338; 14996819; 15073297; 15995204; 16397293; 17618229; 22101843</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b4124</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">yjdG</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948870 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948870">
+        <rdfs:label rdf:datatype="&xsd;string">rstB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948870</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK1604</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11233</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009274; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW1601</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1495392; 1925016; 2646639; 9097039; 9205844; 9278503; 12813061; 12897016; 15126461; 15322361; 15522865; 15919996; 16120447; 16397293; 17985211; 21854787</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b1609</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with RstA</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">uspT</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948874 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948874">
+        <rdfs:label rdf:datatype="&xsd;string">arcA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948874</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with ArcB or CpxA</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK4393</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10061</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0016563; GO_0016564</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW4364</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1315704; 1328158; 1482126; 1512197; 1565612; 1592804; 1812811; 1851949; 1885542; 2041478; 2157156; 2170337; 2565334; 2964639; 2984198; 6304010; 6328216; 7007352; 7565118; 7610040; 7699720; 7855430; 8022271; 8098993; 8132465; 8226939; 8412671; 8550494; 8825099; 8892825; 9278503; 9286997; 9298646; 9302022; 9632255; 9683496; 9830034; 9868788; 9880556; 10071223; 10216875; 10585483; 10794600; 10851007; 10940038; 10947842; 10998176; 11092847; 11123679; 11133990; 11527965; 11782500; 11932447; 12368244; 12486057; 12581159; 12596232; 12618449; 12627170; 12897016; 14711822; 15252051; 15326287; 15669087; 15699038; 15728117; 15838044; 15852340; 15876365; 16140031; 16140472; 16291649; 16397293; 16606699; 16630255; 16709570; 16750836; 16849788; 16849790; 16962353; 17013945; 17187058; 17213678; 17307737; 17313674; 17360572; 18223071; 18326580; 18349549; 18349550; 18402772; 18631241; 18824089; 19013277; 19091747; 19536200; 19561129; 19614590; 19682256; 19715602; 19851741; 19887109; 19897650; 19933363; 20622065; 21252224; 21464517; 21481254; 22009573; 23065979; 23331412; 24146625</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b4401</obo:OGG_0000000007>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">cpxC</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">dye</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">fexA</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">msp</obo:IAO_0000118>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">seg</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">sfrA</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948922 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948922">
+        <rdfs:label rdf:datatype="&xsd;string">creB</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948922</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with CreC</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK4390</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11218</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0016563</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW4361</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ORF2</obo:IAO_0000118>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1482126; 1551826; 2157156; 2228961; 3531171; 7610040; 7699720; 7855419; 8098993; 9278503; 12429059; 12618449; 12897016; 12951338; 15522865; 16397293; 16818608; 18223071; 18375564; 18631241; 19561129</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b4398</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">yjjE</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000948993 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000948993">
+        <rdfs:label rdf:datatype="&xsd;string">rcsC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">948993</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2211</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG10822</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009242; GO_0009274; GO_0019866; GO_0042280</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW5917</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW5920</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1447156; 2404948; 2836365; 3029041; 3888955; 8366025; 8576059; 8990283; 9278503; 9352941; 9364917; 10564486; 11309126; 11566985; 11758943; 11807084; 11976318; 12410838; 12581159; 12864862; 12897016; 13129944; 14514676; 14651646; 15375134; 15476819; 15901715; 15919996; 16153174; 16166540; 16397293; 16427772; 16607041; 16621809; 16740933; 16776655; 16816180; 17005198; 17036162; 17122336; 17185552; 17575454; 17941710; 18192383; 18792681; 19026860; 19260968; 19552773; 19696107</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2218</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">hybrid sensory kinase in two-component regulatory system with RcsB and YojN</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000949011 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000949011">
+        <rdfs:label rdf:datatype="&xsd;string">atoS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">949011</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2212</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11667</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464; GO_0009274; GO_0019395; GO_0019866</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2213</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 2883171; 8346225; 9097040; 9278503; 12897016; 14592990; 15200682; 15919996; 16120447; 16153782; 16397293; 16564134; 17122336; 17224065; 17475408; 17537579; 18235991; 18534200; 18855762; 19198978; 20563612; 21295116</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2219</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <dc:description rdf:datatype="&xsd;string">sensory histidine kinase in two-component regulatory system with AtoC</dc:description>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000949024 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000949024">
+        <rdfs:label rdf:datatype="&xsd;string">yehT</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">949024</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2117</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG12006</oboInOwl:hasDbXref>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW5352</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 9278503; 12618449; 12897016; 12951338; 16397293; 22685278</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2125</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">predicted response regulator in two-component system withYehU</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000949027 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000949027">
+        <rdfs:label rdf:datatype="&xsd;string">yehU</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">949027</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2118</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG12007</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0006464</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW5353</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 9278503; 12897016; 12914674; 15919996; 16120447; 16397293; 22685278</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2126</obo:OGG_0000000007>
+        <dc:description rdf:datatype="&xsd;string">predicted sensory kinase in two-component system with YehT, inner membrane protein</dc:description>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGG_3000949081 -->
+
+    <owl:Class rdf:about="&obo;OGG_3000949081">
+        <rdfs:label rdf:datatype="&xsd;string">narP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGG_2060511145"/>
+        <obo:OGG_0000000009 rdf:datatype="&xsd;string">20140406</obo:OGG_0000000009>
+        <obo:OGG_0000000015 rdf:datatype="&xsd;string">511145</obo:OGG_0000000015>
+        <obo:OGG_0000000006 rdf:datatype="&xsd;string">949081</obo:OGG_0000000006>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">Bin Zhao, Yue Liu, Oliver He</obo:IAO_0000117>
+        <dc:description rdf:datatype="&xsd;string">DNA-binding response regulator in two-component regulatory system with NarQ or NarX</dc:description>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">ECK2185</obo:IAO_0000118>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EcoGene:EG11527</oboInOwl:hasDbXref>
+        <obo:OGG_0000000029 rdf:datatype="&xsd;string">GO_0005737; GO_0009061; GO_0016563; GO_0016564</obo:OGG_0000000029>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">JW2181</obo:IAO_0000118>
+        <obo:OGG_0000000019 rdf:datatype="&xsd;string">NCBI-supplied</obo:OGG_0000000019>
+        <obo:OGG_0000000030 rdf:datatype="&xsd;string">PMID: 1482126; 2157156; 7699720; 8098993; 8412692; 8501030; 9278503; 9302020; 12581159; 12618449; 12644479; 12897016; 12923080; 15728117; 15978080; 16199562; 16377617; 16397293; 16417496; 16818608; 16936015; 17313674; 17720788; 17965164; 18227264; 19968795; 20634237</obo:OGG_0000000030>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">WEB: http://www.ncbi.nlm.nih.gov/gene</obo:IAO_0000119>
+        <obo:OGG_0000000007 rdf:datatype="&xsd;string">b2193</obo:OGG_0000000007>
+        <obo:OGG_0000000018 rdf:datatype="&xsd;string">protein-coding</obo:OGG_0000000018>
+        <obo:IAO_0000412 rdf:resource="&obo;ogg.owl"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

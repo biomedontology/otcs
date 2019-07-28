@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;OTCS/MI_import.owl.#"
+     xml:base="&obo;OTCS/MI_import.owl."
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="&obo;OTCS/MI_import.owl."/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;inSubset">
+        <rdfs:label rdf:datatype="&xsd;string">in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000005 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000005">
+        <rdfs:label xml:lang="zh">pH variation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000006 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000006">
+        <rdfs:label xml:lang="zh">temperature variation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000007 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000007">
+        <rdfs:label xml:lang="zh">extracytoplasmic pH variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000008 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000008">
+        <rdfs:label xml:lang="zh">cytoplasmic pH variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000009 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000009">
+        <rdfs:label xml:lang="zh">near neutral pH to acidic pH</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000007"/>
+        <obo:IAO_0000115>the pH value of extracellular environment change from 6.5 - 7.5 to below 6.5 </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000014 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000014">
+        <rdfs:label xml:lang="zh">near neutral pH to strongly alkaline pH</rdfs:label>
+        <obo:IAO_0000115>the pH value of extracellular environment change from 6.5 - 7.5 to above 10.0</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000017 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000017">
+        <rdfs:label xml:lang="zh">extracytoplasmic osmolarity variation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000018 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000018">
+        <rdfs:label xml:lang="zh">cytoplasmic osmolarity variation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000019 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000019">
+        <rdfs:label xml:lang="zh">isotonic osmolarity to hypotonic osmolarity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000017"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000020 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000020">
+        <rdfs:label xml:lang="zh">isotonic osmolarity to hyperosmotic osmolarity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000017"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000021 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000021">
+        <rdfs:label xml:lang="zh">extracytoplasmic temperature variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000022 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000022">
+        <rdfs:label xml:lang="zh">cytoplasmic temperature variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000023 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000023">
+        <rdfs:label xml:lang="zh">optimum growth temperature to relatively high temperature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000021"/>
+        <obo:IAO_0000115>the temperature of extracellular environment change from 20 - 45 degrees C to 45 - 122 degrees C</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000024 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000024">
+        <rdfs:label xml:lang="zh">optimum growth temperature to relatively cold temperature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000021"/>
+        <obo:IAO_0000115>the temperature of extracellular environment change from 20 - 45 degrees C to -15 - 20 degrees C</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000031 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000031">
+        <rdfs:label xml:lang="zh">ion concentration variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000051"/>
+        <obo:IAO_0000115>the concentration variation of an ion, referring to an atom or molecule that has a net electrical charge, in extracellular or cellular environment</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000032 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000032">
+        <rdfs:label xml:lang="zh">extracytoplasmic ion concentration variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000034 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000034">
+        <rdfs:label xml:lang="zh">cytoplasmic ion concentration variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000031"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000035 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000035">
+        <rdfs:label xml:lang="zh">anion concentration variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000032"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000036 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000036">
+        <rdfs:label xml:lang="zh">cation concentration variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000032"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000037 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000037">
+        <rdfs:label xml:lang="zh">magnesium(2+) concentration variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000036"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000038 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000038">
+        <rdfs:label xml:lang="zh">iron(3+) concentration variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000036"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000039 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000039">
+        <rdfs:label xml:lang="zh">zinc(2+) concentration variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000036"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000040 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000040">
+        <rdfs:label xml:lang="zh">sodium(1+) concentration variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000036"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000041 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000041">
+        <rdfs:label xml:lang="zh">potassium(1+) concentration variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000036"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000044 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000044">
+        <rdfs:label xml:lang="zh">formate concentration variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000035"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000045 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000045">
+        <rdfs:label xml:lang="zh">magnesium(2+) concentration lower than 10 uM</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000037"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000049 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000049">
+        <rdfs:label xml:lang="zh">antibiotic</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000051 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000051">
+        <rdfs:label xml:lang="zh">chemical concentration variation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000052 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000052">
+        <rdfs:label xml:lang="zh">polyatomic concentration variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000051"/>
+        <obo:IAO_0000115>the concentration variation of polyatomic molecule, referring to any molecule consists of more than one atom, in cellular or extracellular environment.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000053 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000053">
+        <rdfs:label xml:lang="zh">extracytoplasmic oxygen level variation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000054 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000054">
+        <rdfs:label xml:lang="zh">beta-lactam</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000049"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000055 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000055">
+        <rdfs:label xml:lang="zh">TCS activation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000056 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000056">
+        <rdfs:label xml:lang="zh">cell component variation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000057 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000057">
+        <rdfs:label xml:lang="zh">bacterial cell component variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000056"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000058 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000058">
+        <rdfs:label xml:lang="zh">spheroplast formation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OTCS_0000057"/>
+        <obo:IAO_0000115>a spheroplast (or sphaeroplast) is a cell from which the cell wall has been almost completely removed</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OTCS_0000059 -->
+
+    <owl:Class rdf:about="&obo;OTCS_0000059">
+        <rdfs:label xml:lang="zh">misfolded protein</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
